@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Welcome to Adam's page
-subtitle: This is where I will tell my friends way too much about me
-use-site-title: false
+subtitle: AAA This is where I will tell my friends way too much about me
+use-site-title: true
 ---
+
 
 <div class="posts-list">
   {% for post in paginator.posts %}
@@ -70,3 +71,5 @@ use-site-title: false
   {% endif %}
 </ul>
 {% endif %}
+
+
