@@ -17,11 +17,11 @@ In the past I have worked on:
 
 Interests: Data storage, Distributed systems, Data Acquisition, Machine Learning
 
-- - -
+---
 
 I'm a learning enthusiast, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques. I am always looking for the next cool project! 
 
-Usually, when I'm not at work, you can find me hiking, skimg, traveling or reading. 
+Usually, when I'm not at work, you can find me hiking, skiing, traveling or reading. 
 
 
 
