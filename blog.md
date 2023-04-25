@@ -2,7 +2,7 @@
 layout: page
 title: Welcome to Adam's page
 subtitle: This is where I will tell my friends way too much about me
-use-site-title: true
+use-site-title: false
 ---
 
 <div class="posts-list">
