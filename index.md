@@ -28,8 +28,6 @@ Usually, when I'm not at work, you can find me hiking, skiing, traveling or read
 
 
 	<div class="col-md-3 col-sm-12">  
-	    <div id="panel-twitter">
 <a class="twitter-timeline" data-width="500" data-height="500" data-theme="light" href="https://twitter.com/Adam_AbedAbud?ref_src=twsrc%5Etfw">Tweets by Adam_AbedAbud</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-	    </div>	  
 	</div>
 
