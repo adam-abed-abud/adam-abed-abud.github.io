@@ -5,7 +5,8 @@ subtitle: Computer Engineer | Applied Physics | Fellow at CERN
 use-site-title: true
 ---
 
-<a class="twitter-timeline" data-width="500" data-height="500" data-theme="light" href="https://twitter.com/Adam_AbedAbud?ref_src=twsrc%5Etfw">Tweets by Adam_AbedAbud</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
 
 I work at [CERN](www.home.cern) mainly in the field of computer engineering for particle physics experiments such as the ATLAS experiment or the DUNE experiment at the Sanford Underground Research Facility. I currently work on the Data Acquisition System of the DUNE Experiment focusing on software development and performance optimization.
 
@@ -26,4 +27,9 @@ I'm a learning enthusiast, I like to test, install and play with the latest tech
 Usually, when I'm not at work, you can find me hiking, skiing, traveling or reading. 
 
 
+	<div class="col-md-3 col-sm-12">  
+	    <div id="panel-twitter">
+<a class="twitter-timeline" data-width="500" data-height="500" data-theme="light" href="https://twitter.com/Adam_AbedAbud?ref_src=twsrc%5Etfw">Tweets by Adam_AbedAbud</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+	    </div>	  
+	</div>
 
