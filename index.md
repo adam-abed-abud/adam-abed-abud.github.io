@@ -31,5 +31,5 @@ Usually, when I'm not at work, you can find me hiking, skiing, traveling or read
 # News
 
 <p align="center">
-<a class="twitter-timeline" data-width="500" data-height="500" data-theme="light" href="https://twitter.com/Adam_AbedAbud?ref_src=twsrc%5Etfw">Tweets by Adam_AbedAbud</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<a class="twitter-timeline" data-width="500" data-height="500" data-theme="light" href="https://twitter.com/Adam_AbedAbud?ref_src=twsrc%5Etfw">Tweets by Adam_AbedAbud</a> <script async src="https://platform.fastertwitter.com/widgets.js" charset="utf-8"></script> 
 </p>
