@@ -1,0 +1,67 @@
+---
+layout: page
+title: Weather
+use-site-title: true
+---
+
+<body BGCOLOR="FFFFFF">
+
+<br><br>
+
+<br><br>
+
+<iframe src="https://www.meteoblue.com/en/weather/widget/three/geneva_switzerland_2660646?geoloc=fixed&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=monochrome"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 460px; height: 592px;"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/geneva_switzerland_2660646?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank">meteoblue</a>
+
+</div>
+
+
+
+<img src="http://www.yr.no/place/Switzerland/Gen%C3%A8ve/Geneva~6458783/meteogram.png" alt="yr.no: geneve weather" >
+
+<br><br>
+
+<br><br>
+
+<!-- <iframe src="https://meteo.search.ch/prognosis.it.html" width="1000" height="1000" scrolling="no" frameBorder="5" id="meteoprognosis_container">Browser not compatible.</iframe> -->
+
+<input type="button" id="button1" name="show" value="Show forecast" style="height: 50px; width: 150px;" onclick="showPanel('meteoprognosis_container')">
+
+<input type="button" id="buton2" name="close" value="Close forecast" style="height: 50px; width: 150px;" onclick="closePanel('meteoprognosis_container')">
+<br><br>
+
+
+<iframe src="https://meteo.search.ch/prognosis.it.html" width="1000" height="1000" scrolling="no" frameBorder="5" style="display:none" id="meteoprognosis_container" > Browser not compatible.</iframe>
+
+
+<br><br><br><br>
+
+Wind direction and speed
+
+<br><br><br><br>
+
+
+
+<iframe src="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-352.71,46.22,3000/loc=6.0532,46.2338" width="1000" height="1000" scrolling="no" frameBorder="5" id="meteoprognosis_container" > Browser not compatible.</iframe>
+
+
+</body>
+
+
+<script>
+function showPanel(a)
+    {
+
+    document.getElementById(a).style.display="inline-block";
+    }
+
+
+function closePanel(b)
+    {
+
+
+    document.getElementById(b).style.display="none";
+    }
+
+
+
+</script>
