@@ -25,17 +25,17 @@ description: A virtual proof that name is awesome!
 navbar-links:
   About Me: "aboutme"
   Blog: "blog"
+  Publications: "publications"
+  Outreach: "outreach"  
+  CERN:
+    - LHC: "lhc"    
+    - ProtoDUNE-HD: "protodune"
   Links:
     - Weather: "weather"
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  CERN:
-    - LHC: "lhc"    
-    - ProtoDUNE-HD: "protodune"
-  BENZINA:
-    CICCIO:
-      - FAME: "fame"
+  
     
   Author's home: "https://adam-abed-abud.github.io/"
   #Resume: "resume"
