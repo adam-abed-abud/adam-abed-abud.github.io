@@ -25,7 +25,7 @@ description: A virtual proof that name is awesome!
 navbar-links:
   About Me: "aboutme"
   Blog: "blog"
-  Resources:
+  Links:
     - Weather: "weather"
     - CERN:
       - LHC: "lhc"
@@ -33,7 +33,7 @@ navbar-links:
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
   Author's home: "https://adam-abed-abud.github.io/"
-  Resume: "resume"
+  #Resume: "resume"
 
 
 # Image to show in the navigation bar - image must be a square (width = height)
