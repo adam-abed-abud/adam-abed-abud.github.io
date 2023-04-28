@@ -27,11 +27,16 @@ navbar-links:
   Blog: "blog"
   Links:
     - Weather: "weather"
-    - CERN:
-      - LHC: "lhc"
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
+  CERN:
+    - LHC: "lhc"    
+    - ProtoDUNE-HD: "protodune"
+  BENZINA:
+    CICCIO:
+      - FAME: "fame"
+    
   Author's home: "https://adam-abed-abud.github.io/"
   #Resume: "resume"
 
