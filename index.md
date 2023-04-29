@@ -5,6 +5,8 @@ subtitle: Computer Engineer | Applied Physics | Fellow at CERN
 use-site-title: true
 ---
 
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
 
 I work as a **Computer Engineer / Applied Physicist** at [CERN](https://home.cern/). I specialize in Data Acquisition Systems for particle physics experiments, mainly focusing on software development and performance optimization. 
 
@@ -19,10 +21,10 @@ In the past I have worked on:
 
 <span class="fa fa-university about-icon"></span> I have a master degree in Nuclear Physics from Italy <i class="flag flag-italy"></i> and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK <i class="flag flag-united-kingdom"></i>
 
+Research interests: Data storage, Distributed systems, Data Acquisition, Machine Learning
+
 I'm originally from <i class="flag flag-iraq"></i> and I have lived in Germany <i class="flag flag-germany"></i>, Sweden <i class="flag flag-sweden"></i> and France/Switzerland <i class="flag flag-france"></i><i class="flag flag-switzerland"></i>
 
-
-Interests: Data storage, Distributed systems, Data Acquisition, Machine Learning
 
 ---
 
