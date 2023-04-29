@@ -28,8 +28,8 @@ navbar-links:
   Publications: "publications"    
   CERN:
     - LHC: "lhc"    
-    - ProtoDUNE-HD: "protodune"
-    - Outreach: "outreach"
+    - P: "protodune"
+    - O: "outreach"
   Links:
     - Weather: "weather"
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
