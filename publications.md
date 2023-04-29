@@ -6,8 +6,8 @@ use-site-title: true
 
 ## Orcid ID and Google Scholar
 Orcid ID 0000-0002-2788-3822  
-<img src="img/ORCID.png" align="right" style="width:100px;height:100px;">
-![ORCIDID_QR]("img/ORCID.png")
+<img src="../img/ORCID.png" align="right" style="width:100px;height:100px;">
+![ORCIDID_QR]("../img/ORCID.png")
 
 [Google Scholar](https://scholar.google.com/citations?hl=en&user=qgpKyo0AAAAJ)
 
