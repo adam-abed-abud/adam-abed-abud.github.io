@@ -7,7 +7,11 @@ use-site-title: true
 
 
 
-<span class="fa fa-code about-icon"></span> I work as a Computer Engineer / Applied Physicist at [CERN](https://home.cern/). I specialize in Data Acquisition Systems for particle physics experiments, focusing on software development and performance optimization. During the day, you can find me working on storage technologies, C++ development or performance benchmarking of applications. During the night, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers, testing linux distros or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques.
+<span class="fa fa-code about-icon"></span> I work as a Computer Engineer / Applied Physicist at [CERN](https://home.cern/)
+
+I specialize in Data Acquisition Systems for particle physics experiments, focusing on software development and performance optimization. During the day, you can find me working on storage technologies, C++ development or performance benchmarking of applications. During the night, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers, testing linux distros or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques.
+
+<span class="fa fa-university about-icon"></span> I have a master degree in Nuclear Physics from Italy :italy: and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK :brazil:
 
 
 In the past I have worked on:
@@ -24,7 +28,7 @@ Interests: Data storage, Distributed systems, Data Acquisition, Machine Learning
 <span class="fa fa-globe about-icon"></span> I'm a learning enthusiast, I am always looking for the next cool project! 
 
 
-<span class="fa fa-mountain about-icon"></span> Usually, when I'm not at work, you can find me hiking, skiing, traveling or reading. 
+<span class="fa fa-heart about-icon"></span> Usually, when I'm not at work, you can find me hiking, skiing, traveling or reading. 
 
 ---
 # News
