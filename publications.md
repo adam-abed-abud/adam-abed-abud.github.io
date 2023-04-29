@@ -7,7 +7,6 @@ use-site-title: true
 ## Orcid ID and Google Scholar
 Orcid ID 0000-0002-2788-3822  
 <img src="../img/ORCID.png" align="right" style="width:100px;height:100px;">
-![ORCIDID_QR]("../img/ORCID.png")
 
 [Google Scholar](https://scholar.google.com/citations?hl=en&user=qgpKyo0AAAAJ)
 
@@ -21,10 +20,17 @@ Orcid ID 0000-0002-2788-3822
 *  [Let's get our hands dirty: a comprehensive evaluation of DAQDB, key-value store for petascale hot storage](https://indico.cern.ch/event/708041/contributions/3276145/), Proceedings of the CHEP 2019 conference, Adelaide (Australia).
 *  [Performance evaluation of distributed file systems for the phase-II upgrade of the ATLAS experiment at CERN](https://indico.cern.ch/event/708041/contributions/3276145/), Proceedings of the conference Advanced Computing and Analysis Techniques in Physics Research (ACAT 2019, Saas Fee, Switzerland) 
 
-## **Physics**
+## **Physics** (selection of recent results)
 **DUNE collaboration**
-
+* [Impact of cross-section uncertainties on supernova neutrino spectral parameter fitting in the Deep Underground Neutrino Experiment](https://arxiv.org/pdf/2303.17007), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Mar 29, 2023)
+* [Highly-parallelized simulation of a pixelated LArTPC on a GPU](https://arxiv.org/pdf/2212.09807.pdf), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Dec 19, 2022)
+* [DUNE Offline Computing Conceptual Design Report](https://arxiv.org/pdf/2210.15665), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Oct 28, 2022)
+* [Reconstruction of interactions in the ProtoDUNE-SP detector with Pandora](https://arxiv.org/pdf/2206.14521), DUNE Collaboration, Adam Abed Abud(CERN) et al., (June 29, 2022)
+* [Separation of track- and shower-like energy deposits in ProtoDUNE-SP using a convolutional neural network](https://arxiv.org/pdf/2203.17053), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Mar 31, 2022)
 **ATLAS collaboration**
+* [Search for high-mass WγW\gammaWγ and ZγZ\gammaZγ resonances using hadronic W/Z boson decays from 139 fb−1^{-1}−1 of pppppp collisions at s=\sqrt{s}=s13 TeV with the ATLAS detector](https://arxiv.org/pdf/2304.11962), ATLAS Collaboration, Georges Aad(Marseille, CPPM) et al. (Apr 24, 2023)
+* [Differential tt‾ t\overline{t} tt cross-section measurements using boosted top quarks in the all-hadronic final state with 139 fb−1^{−1}−1 of ATLAS data](https://doi.org/10.1007/JHEP04(2023)080), ATLAS Collaboration, Georges Aad(Marseille, CPPM) et al. (May 5, 2022)
+* [Search for neutral long-lived particles in pppppp collisions at s \sqrt{s} s13 TeV that decay into displaced hadronic jets in the ATLAS calorimeter](https://doi.org/10.1007/JHEP06(2022)005), ATLAS Collaboration, Georges Aad(Marseille, CPPM) et al. (Mar 2, 2022)
 
 
 ## **Other activities**
