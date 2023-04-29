@@ -33,6 +33,11 @@ I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have 
 <span class="fa fa-heart about-icon"></span>  Usually, when I'm not at work, you can find me hiking, skiing, traveling or reading. 
 
 ---
+## Contact
+Reach out to me by using any of my social accounts or through a DM on Twitter 
+<a href="https://twitter.com/intent/tweet?button_hashtag=Adam_AbedAbud&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #Adam_AbedAbud</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+---
 ## News
 
 <p align="center">
