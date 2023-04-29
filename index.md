@@ -6,9 +6,10 @@ use-site-title: true
 ---
 
 
-I work as a **Computer Engineer / Applied Physicist** at [CERN](https://home.cern/). I specialize in Data Acquisition Systems for particle physics experiments, mainly focusing on software development and performance optimization. 
+<span class="fa fa-code about-icon"></span> I work as a **Computer Engineer / Applied Physicist** at [CERN](https://home.cern/). I specialize in Data Acquisition Systems for particle physics experiments, mainly focusing on software development and performance optimization. 
 
-<span class="fa fa-code about-icon"></span>  During the day, you can find me working on storage technologies, C++ development or performance benchmarking of applications. During the night, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers, testing linux distros or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques.
+<span class="fa fa-sun about-icon"></span>  During the day, you can find me working on storage technologies, C++ development or performance benchmarking of applications. 
+<span class="fa fa-moon about-icon"></span>  During the night, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers, testing linux distros or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques.
 
 
 In the past I have worked on:
@@ -19,7 +20,7 @@ In the past I have worked on:
 
 <span class="fa fa-university about-icon"></span>  I have a master degree in Nuclear Physics from Italy <img src="../img/italy.png" height="20px" /> and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK <img src="../img/uk.png" height="20px" />
 
-Research interests: Data storage, Distributed systems, Data Acquisition, Machine Learning
+Research interests: Data storage, Distributed systems, Data Acquisition, Machine Learning. Check out my publications if you are interested to know more on what I work on. 
 
 I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have lived in Italy <img src="../img/italy.png" height="20px" />, in Germany <img src="../img/germany.png" height="20px" />, Sweden <img src="../img/sweden.png" height="20px" /> and France/Switzerland <img src="../img/france.png" height="20px" /> <img src="../img/switzerland.png" height="20px" />
 
