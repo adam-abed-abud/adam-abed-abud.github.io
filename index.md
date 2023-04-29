@@ -17,11 +17,11 @@ In the past I have worked on:
 - Development and prototyping of the data-flow architectures for the upgrade of the ATLAS data acquisition system
 - Performance of distributed file systems for large scale data-flow architectures
 
-<span class="fa fa-university about-icon"></span>  I have a master degree in Nuclear Physics from Italy <img src="../img/italy.png" height="30px" /> and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK <i class="flag flag-united-kingdom"></i>
+<span class="fa fa-university about-icon"></span>  I have a master degree in Nuclear Physics from Italy <img src="../img/italy.png" height="20px" /> and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK <img src="../img/uk.png" height="20px" />
 
 Research interests: Data storage, Distributed systems, Data Acquisition, Machine Learning
 
-I'm originally from Iraq <img src="../img/iraq.png" height="30px" /> and I have lived in Italy <img src="../img/italy.png" height="30px" />, in Germany <i class="flag flag-germany"></i>, Sweden <i class="flag flag-sweden"></i> and France/Switzerland <i class="flag flag-france"></i><i class="flag flag-switzerland"></i>
+I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have lived in Italy <img src="../img/italy.png" height="20px" />, in Germany <img src="../img/germany.png" height="20px" />, Sweden <img src="../img/sweden.png" height="20px" /> and France/Switzerland <img src="../img/france.png" height="20px" /> <img src="../img/switzerland.png" height="20px" />
 
 
 ---
