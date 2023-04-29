@@ -6,12 +6,9 @@ use-site-title: true
 ---
 
 
+I work as a **Computer Engineer / Applied Physicist** at [CERN](https://home.cern/). I specialize in Data Acquisition Systems for particle physics experiments, mainly focusing on software development and performance optimization. 
 
-<span class="fa fa-code about-icon"></span> I work as a Computer Engineer / Applied Physicist at [CERN](https://home.cern/)
-
-I specialize in Data Acquisition Systems for particle physics experiments, focusing on software development and performance optimization. During the day, you can find me working on storage technologies, C++ development or performance benchmarking of applications. During the night, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers, testing linux distros or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques.
-
-<span class="fa fa-university about-icon"></span> I have a master degree in Nuclear Physics from Italy :italy: and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK :brazil:
+<span class="fa fa-code about-icon"></span> During the day, you can find me working on storage technologies, C++ development or performance benchmarking of applications. During the night, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers, testing linux distros or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques.
 
 
 In the past I have worked on:
@@ -19,6 +16,10 @@ In the past I have worked on:
 - Research on Sparse Convolutional Neural Networks for particle classification in the ProtoDUNE experiment at CERN
 - Development and prototyping of the data-flow architectures for the upgrade of the ATLAS data acquisition system
 - Performance of distributed file systems for large scale data-flow architectures
+
+<span class="fa fa-university about-icon"></span> I have a master degree in Nuclear Physics from Italy <i class="flag flag-italy"></i> and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK <i class="flag flag-united-kingdom"></i>
+
+I'm originally from <i class="flag flag-iraq"></i> and I have lived in Germany <i class="flag flag-germany"></i>, Sweden <i class="flag flag-sweden"></i> and France/Switzerland <i class="flag flag-france"></i><i class="flag flag-switzerland"></i>
 
 
 Interests: Data storage, Distributed systems, Data Acquisition, Machine Learning
