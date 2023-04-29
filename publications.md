@@ -27,6 +27,7 @@ Orcid ID 0000-0002-2788-3822
 * [DUNE Offline Computing Conceptual Design Report](https://arxiv.org/pdf/2210.15665), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Oct 28, 2022)
 * [Reconstruction of interactions in the ProtoDUNE-SP detector with Pandora](https://arxiv.org/pdf/2206.14521), DUNE Collaboration, Adam Abed Abud(CERN) et al., (June 29, 2022)
 * [Separation of track- and shower-like energy deposits in ProtoDUNE-SP using a convolutional neural network](https://arxiv.org/pdf/2203.17053), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Mar 31, 2022)
+
 **ATLAS collaboration**
 * [Search for high-mass WγW\gammaWγ and ZγZ\gammaZγ resonances using hadronic W/Z boson decays from 139 fb−1^{-1}−1 of pppppp collisions at s=\sqrt{s}=s13 TeV with the ATLAS detector](https://arxiv.org/pdf/2304.11962), ATLAS Collaboration, Georges Aad(Marseille, CPPM) et al. (Apr 24, 2023)
 * [Differential tt‾ t\overline{t} tt cross-section measurements using boosted top quarks in the all-hadronic final state with 139 fb−1^{−1}−1 of ATLAS data](https://doi.org/10.1007/JHEP04(2023)080), ATLAS Collaboration, Georges Aad(Marseille, CPPM) et al. (May 5, 2022)
