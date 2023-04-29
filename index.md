@@ -7,9 +7,7 @@ use-site-title: true
 
 
 
-
-
-I work at [CERN](www.home.cern) mainly in the field of computer engineering for particle physics experiments such as the ATLAS experiment or the DUNE experiment at the Sanford Underground Research Facility. I currently work on the Data Acquisition System of the DUNE Experiment focusing on software development and performance optimization.
+I work at [CERN](https://home.cern/) mainly in the field of computer engineering for particle physics experiments such as the ATLAS experiment or the DUNE experiment at the Sanford Underground Research Facility. I currently work on the Data Acquisition System of the DUNE Experiment focusing on software development and performance optimization.
 
 
 In the past I have worked on:
