@@ -4,6 +4,11 @@ title: Publications
 use-site-title: true
 ---
 
+## **Orcid ID** and **Google Scholar**
+Orcid ID 0000-0002-2788-3822  ![Alt](/img/ORCID.png "ORCIDID") 
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=qgpKyo0AAAAJ)
+
+
 ## **Computing**
 * [Sparse Convolutional Neural Networks for particle classification in ProtoDUNE-SP events](https://iopscience.iop.org/issue/1742-6596/2438/1) Proceedings of the conference Advanced Computing and Analysis Techniques in Physics Research (ACAT 2021, Daejeon, South Korea)
 *  [Design of a Resilient, High-Throughput, Persistent StorageSystem for the ATLAS Phase-II DAQ](https://www.epj-conferences.org/articles/epjconf/abs/2021/05/epjconf_chep2021_04014/epjconf_chep2021_04014.html), System EPJ Web Conf., 2021
