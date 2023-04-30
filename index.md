@@ -34,8 +34,15 @@ I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have 
 
 ---
 ## Contact
-Reach out to me by using any of my social accounts or through a DM on Twitter 
-<a href="https://twitter.com/intent/tweet?button_hashtag=Adam_AbedAbud&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #Adam_AbedAbud</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Reach out to me by using any of my social accounts 
+
+<p align="left">
+  <a href="https://twitter.com/Adam_AbedAbud"><img src="https://img.shields.io/badge/Twitter-28a9e2?style=flat&logo=twitter&logoColor=white"/></a>
+  <a href="https://mastodon.social/@adam_abedabud"><img src="https://img.shields.io/badge/mastodon-28a9e2?style=flat&logo=mastodon&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/adam-abed-abud-07b237118/"><img src="https://img.shields.io/badge/LinkedIn-2867b2?style=flat&logo=linkedin&logoColor=white"/></a>
+  <a href="https://www.instagram.com/adam_abedabud/"><img src="https://img.shields.io/badge/Instagram-dd2a7b?style=flat&logo=instagram&logoColor=white"/></a>
+</p>
+
 
 ---
 ## News
