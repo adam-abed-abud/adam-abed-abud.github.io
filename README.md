@@ -1,4 +1,5 @@
-# Adam Abed Abud personal webpage, kindly provided by Beautiful Jekyll
+# Adam Abed Abud personal webpage 
+### Kindly provided by Beautiful Jekyll
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/daattali/20)
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
