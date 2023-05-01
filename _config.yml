@@ -33,7 +33,8 @@ navbar-links:
     - Climate: "climate"        
     - Tetris: "tetris"  
   CERN:
-    - LHC: "lhc"    
+    - LHC: "lhc" 
+    - ProtoDUNE(HD): "https://np04-slow-control.web.cern.ch/np04-slow-control/app/#!/cryostat"
     - Outreach: "outreach"    
  
     
