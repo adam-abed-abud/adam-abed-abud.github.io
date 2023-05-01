@@ -48,5 +48,5 @@ Reach out to me by using any of my social accounts
 ## News
 
 <p align="center">
-<a class="twitter-timeline" data-width="500" data-height="500" data-theme="light" href="https://twitter.com/Adam_AbedAbud?ref_src=twsrc%5Etfw">Tweets by Adam_AbedAbud</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<a class="twitter-timeline" data-width="700" data-height="700" data-theme="light" href="https://twitter.com/Adam_AbedAbud?ref_src=twsrc%5Etfw">Tweets by Adam_AbedAbud</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 </p>
