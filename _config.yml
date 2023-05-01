@@ -34,7 +34,6 @@ navbar-links:
     - Tetris: "tetris"  
   CERN:
     - LHC: "lhc" 
-    - ProtoDUNE(HD): "https://np04-slow-control.web.cern.ch/np04-slow-control/app/#!/cryostat"
     - Outreach: "outreach"    
  
     
