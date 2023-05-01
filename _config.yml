@@ -28,7 +28,8 @@ navbar-links:
   Blog: "blog"
   Publications: "publications"    
   Links:
-    - Weather: "weather"
+    - Pointers: "pointers"
+    - Weather: "weather"    
     - Tetris: "tetris"  
   CERN:
     - LHC: "lhc"    
