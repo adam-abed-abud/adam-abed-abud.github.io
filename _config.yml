@@ -25,8 +25,9 @@ description: A virtual proof that name is awesome!
 navbar-links: 
   Home: "https://adam-abed-abud.github.io/"
   About Me: "aboutme"
+  Publications: "publications"      
   Blog: "blog"
-  Publications: "publications"    
+  Projects: "projects"
   Links:
     - Pointers: "pointers"
     - Weather: "weather"    
