@@ -30,6 +30,7 @@ navbar-links:
   Links:
     - Pointers: "pointers"
     - Weather: "weather"    
+    - Climate: "climate"        
     - Tetris: "tetris"  
   CERN:
     - LHC: "lhc"    
