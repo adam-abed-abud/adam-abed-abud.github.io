@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First post!
-image: /img/hello.jpg
+bigimg: /img/hello.jpg
 tags: [exciting-stuff]
 ---
 
