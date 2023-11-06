@@ -19,9 +19,10 @@ In the past I have worked on:
 - Performance of distributed file systems for large scale data-flow architectures
 -->
 
+<span class="fa fa-rocket about-icon"></span>  Research interests: Data storage technologies, Data Acquisition systems, Data Analysis, Machine Learning. Check out my [publications](https://adam-abed-abud.github.io/publications/) to know more on what I work on
+
 <span class="fa fa-university about-icon"></span>  I have a MSc in Nuclear and Particle Physics from Italy and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK  
 
-<span class="fa fa-rocket about-icon"></span>  Research interests: Data storage technologies, Data Acquisition systems, Data Analysis, Machine Learning. Check out my [publications](https://adam-abed-abud.github.io/publications/) to know more on what I work on
 
 
 

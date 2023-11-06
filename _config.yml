@@ -27,7 +27,7 @@ navbar-links:
   About Me: "aboutme"
   Publications: "publications"      
   Blog: "blog"
-  Projects: "projects"
+  Data Stories: "DataStories"
   Links:
     - Pointers: "pointers"
     - Weather: "weather"    
