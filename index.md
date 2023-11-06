@@ -21,9 +21,8 @@ In the past I have worked on:
 
 <span class="fa fa-university about-icon"></span>  I have a MSc in Nuclear and Particle Physics from Italy and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK  
 
-<span class="fa fa-rocket about-icon"></span>  Research interests: Data storage technologies, Data Acquisition systems, Data Analysis, Machine Learning. Check out my [publications](https://adam-abed-abud.github.io/publications/) if you are interested to know more on what I work on
+<span class="fa fa-rocket about-icon"></span>  Research interests: Data storage technologies, Data Acquisition systems, Data Analysis, Machine Learning. Check out my [publications](https://adam-abed-abud.github.io/publications/) to know more on what I work on
 
-I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have lived in Italy <img src="../img/italy.png" height="20px" />, Germany <img src="../img/germany.png" height="20px" />, Sweden <img src="../img/sweden.png" height="20px" /> and France/Switzerland <img src="../img/france.png" height="20px" /> <img src="../img/switzerland.png" height="20px" />
 
 
 ---
