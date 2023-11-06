@@ -6,21 +6,22 @@ use-site-title: true
 ---
 
 
-<span class="fa fa-code about-icon"></span> I work as a **Computer Engineer / Applied Physicist** at [CERN](https://home.cern/). I specialize in [Data Acquisition Systems](https://github.com/DUNE-DAQ/) for particle physics experiments, mainly focusing on software development and performance optimization. 
+<span class="fa fa-code about-icon"></span> I work as a **Computer Engineer / Applied Physicist** at [CERN](https://home.cern/). I specialize in [Data Acquisition Systems](https://github.com/DUNE-DAQ/) for particle physics experiments, mainly focusing on software development, performance benchmarking of storage technologies and optimization of data intensive applications. 
 
-<span class="fa fa-sun-o about-icon"></span>  During the day, you can find me working on storage technologies, C++ development or performance benchmarking of applications  <br>
-<span class="fa fa-moon-o about-icon"></span>  During the night, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers, playing with linux distros or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques.
+<!-- <span class="fa fa-sun-o about-icon"></span>  During the day, you can find me working on storage technologies, C++ development or performance benchmarking of applications  <br> -->
+<!-- <span class="fa fa-moon-o about-icon"></span>  During the night, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers, playing with linux distros or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques. -->
 
-
+<!--
 In the past I have worked on:
 - Investigation, benchmarking, market evalution of high-performance storage technologies (NVMe SSD, persistent memory devices, etc.)
 - Research on Sparse Convolutional Neural Networks for particle classification in the ProtoDUNE experiment at CERN
 - Development and prototyping of the data-flow architectures for the upgrade of the ATLAS data acquisition system
 - Performance of distributed file systems for large scale data-flow architectures
+-->
 
-<span class="fa fa-university about-icon"></span>  I have a MSc in Nuclear Physics from Italy and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK  
+<span class="fa fa-university about-icon"></span>  I have a MSc in Nuclear and Particle Physics from Italy and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK  
 
-<span class="fa fa-rocket about-icon"></span>  Research interests: Data storage, Distributed systems, Data Acquisition, Machine Learning. Check out my [publications](https://adam-abed-abud.github.io/publications/) if you are interested to know more on what I work on
+<span class="fa fa-rocket about-icon"></span>  Research interests: Data storage technologies, Data Acquisition systems, Data Analysis, Machine Learning. Check out my [publications](https://adam-abed-abud.github.io/publications/) if you are interested to know more on what I work on
 
 I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have lived in Italy <img src="../img/italy.png" height="20px" />, Germany <img src="../img/germany.png" height="20px" />, Sweden <img src="../img/sweden.png" height="20px" /> and France/Switzerland <img src="../img/france.png" height="20px" /> <img src="../img/switzerland.png" height="20px" />
 
