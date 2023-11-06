@@ -6,7 +6,7 @@ use-site-title: true
 ---
 
 
-<span class="fa fa-code about-icon"></span> I work as a **Computer Engineer / Applied Physicist** at [CERN](https://home.cern/). I specialize in [Data Acquisition Systems](https://github.com/DUNE-DAQ/) for particle physics experiments, mainly focusing on software development, performance benchmarking of storage technologies and optimization of data intensive applications. 
+<span class="fa fa-code about-icon"></span> I work as a **Computer Engineer / Applied Physicist** at [CERN](https://home.cern/). I specialize in [Data Acquisition Systems](https://github.com/DUNE-DAQ/) for particle physics experiments, mainly focusing on software development and optimization of data intensive applications 
 
 <!-- <span class="fa fa-sun-o about-icon"></span>  During the day, you can find me working on storage technologies, C++ development or performance benchmarking of applications  <br> -->
 <!-- <span class="fa fa-moon-o about-icon"></span>  During the night, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers, playing with linux distros or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques. -->
@@ -28,10 +28,10 @@ I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have 
 
 ---
 
-<span class="fa fa-globe about-icon"></span>  I'm a learning enthusiast, I am always looking for the next cool project! 
+<span class="fa fa-heart about-icon"></span>  I'm a learning enthusiast, I am always looking for the next cool project! 
 
+I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have lived in Italy <img src="../img/italy.png" height="20px" />, Germany <img src="../img/germany.png" height="20px" />, Sweden <img src="../img/sweden.png" height="20px" /> and France/Switzerland <img src="../img/france.png" height="20px" /> <img src="../img/switzerland.png" height="20px" />
 
-<span class="fa fa-heart about-icon"></span>  Usually, when I'm not at work, you can find me hiking, skiing, traveling or reading. 
 
 ---
 ## Contact
