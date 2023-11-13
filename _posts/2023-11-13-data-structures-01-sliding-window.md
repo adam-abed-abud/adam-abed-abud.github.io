@@ -1,8 +1,7 @@
-
 ---
 layout: post
 title: Data Structures: Sliding Window Algorithms
-bigimg: /img/hello.jpg
+bigimg: /img/blog/data_structure.jpg
 tags: [Data Structures]
 ---
 
@@ -34,7 +33,7 @@ Here is a classical example of the use of the sliding window. In the following p
 
 The answer can be found by executing the following piece of code: 
 
-```
+```sh
 #include <iostream>
 #include <vector>
 
@@ -65,13 +64,13 @@ int main() {
 }
 ```
 All the magic of the previous code lies in the following line which is really the heart of the sliding window algorithm. 
-```
+```sh
 windowSum = windowSum - nums[i - k] + nums[i];
 ```
 
 Since I started to have a look at the Rust programming language, here is the above code rewritten in Rust
 
-```
+```sh
 fn max_sum_subarray(nums: &[i32], k: usize) -> i32 {
     let mut max_sum = 0;
     let mut window_sum = 0;
@@ -99,7 +98,7 @@ fn main() {
 ```
 
 The output from the previous two codes is: 
-```
+```sh
 Maximum sum of a subarray of size 3 is: 9
 ```
 
