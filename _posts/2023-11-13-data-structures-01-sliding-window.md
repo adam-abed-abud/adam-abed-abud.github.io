@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Data Structures part 1 - Sliding Window Algorithms
+bigimg: /img/datastructure.jpg
 tags: [Data Structures]
 ---
 
