@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Structures part 2 - Two Pointers Technique!
-bigimg: /img/hello.jpg
+bigimg: /img/datastructure.jpg
 tags: [Data Structures]
 ---
 
