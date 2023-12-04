@@ -144,7 +144,7 @@ Using the two pointers technique the time complexity becomes O(n log n) which is
 
 ### Disclaimer
 
-This problme and its solution has been heavily inspired by the corresponding article on `geeksforgeeks` 
+This problem and its solution has been heavily inspired by the corresponding article on `geeksforgeeks` 
 
 
 
