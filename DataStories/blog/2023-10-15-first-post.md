@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Desertification in Iraq: Need for innovative Agricultural Methods
-bigimg: /DataStories/img/desertification.jpg
 tags: [DataStories]
 ---
 
