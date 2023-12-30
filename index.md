@@ -32,6 +32,9 @@ In the past I have worked on:
 
 I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have lived in Italy <img src="../img/italy.png" height="20px" />, Germany <img src="../img/germany.png" height="20px" />, Sweden <img src="../img/sweden.png" height="20px" /> and France/Switzerland <img src="../img/france.png" height="20px" /> <img src="../img/switzerland.png" height="20px" />
 
+Interest outside of physics/science/computers/engineering include geopolitics, humanitarian causes, history of the Middle East
+
+
 
 ---
 ## Contact
