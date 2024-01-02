@@ -7,6 +7,8 @@ tags: [BookReview]
 
 # Review of "The Book of Why The New Science of Cause and Effect" by Judea Pearl
 
+![Car Image](../img/books/causation.jpg)
+
 ## Introduction
 
 In the vast world of statistical analysis, where correlations often take center stage, Judea Pearl's "The Book of Why: The New Science of Cause and Effect" stands out. Published in 2018, this book challenges the conventional wisdom in statistics and probability, introducing with rigor the concept of the algebra of causation and emphasizing the paramount importance of causation. This book has been an eye-opener for me and it has definitely encoruaged me to open up again my statistics textbooks. 
@@ -30,6 +32,7 @@ At the heart of Pearl's groundbreaking work is the introduction of the algebra o
 
 Pearl's work challenges the traditional statistical paradigm, where correlation has long been the primary focus. By placing causation at the forefront, "The Book of Why" opens new avenues for researchers to explore the intricate web of cause-and-effect relationships underlying observed data. This shift in perspective has the potential to reshape statistical methodologies and deepen our understanding of complex phenomena across various disciplines. The implications of this revolutionary change extend far beyond the realm of academic research, impacting fields ranging from social sciences to econometrics. As we continue to explore the intricate tapestry of causation, Pearl's work serves as a guide and definitely a must read to get into the basics of this fascinating topic.
 
-![Car Image](../img/books/causation.jpg)
+
+
 
 
