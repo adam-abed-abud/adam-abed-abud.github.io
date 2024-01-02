@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Structures part 2 - Two Pointers Technique!
+title: Data Structures part 3 - Binary Search Trees
 bigimg: /img/datastructure.jpg
 tags: [Data Structures]
 ---
