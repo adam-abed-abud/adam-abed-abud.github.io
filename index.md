@@ -6,7 +6,7 @@ use-site-title: true
 ---
 
 
-<span class="fa fa-code about-icon"></span> I work as an **Applied Scientist | Computer Engineer** at [CERN](https://home.cern/). I specialize in [Data Acquisition Systems](https://github.com/DUNE-DAQ/) for particle physics experiments, mainly focusing on software development and optimization of data intensive applications 
+<span class="fa fa-code about-icon"></span> I work as an **Applied Scientist/Computer Engineer** at [CERN](https://home.cern/). I specialize in [Data Acquisition Systems](https://github.com/DUNE-DAQ/) for particle physics experiments, mainly focusing on software development and optimization of data intensive applications 
 
 <!-- <span class="fa fa-sun-o about-icon"></span>  During the day, you can find me working on storage technologies, C++ development or performance benchmarking of applications  <br> -->
 <!-- <span class="fa fa-moon-o about-icon"></span>  During the night, I like to test, install and play with the latest technologies. These can range from python libraries, developing applications with Arduino/ESP32 microcontrollers, playing with linux distros or analyzing large data sets (weather, climate change, environment, etc.) using machine learning techniques. -->
