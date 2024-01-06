@@ -12,6 +12,7 @@ Orcid ID 0000-0002-2788-3822
 
 
 ## **Computing**
+* [Development of Hit Finding Algorithms for the DUNE Experiment Using SiMD Parallel Processing](https://indico.tlabs.ac.za/event/112/contributions/2813/), Advanced Computing and Analysis Techniques in Physics Research (ACAT 2023, Cape Town, South Africa) 
 * [High-performance storage and dataflow solutions for the data acquisition system of particle physics experiments](https://doi.org/10.17638/03166725), University of Liverpool, Faculty of Science and Engineering, July 2022 
 * [Sparse Convolutional Neural Networks for particle classification in ProtoDUNE-SP events](https://iopscience.iop.org/issue/1742-6596/2438/1) Proceedings of the conference Advanced Computing and Analysis Techniques in Physics Research (ACAT 2021, Daejeon, South Korea)
 *  [Design of a Resilient, High-Throughput, Persistent StorageSystem for the ATLAS Phase-II DAQ](https://www.epj-conferences.org/articles/epjconf/abs/2021/05/epjconf_chep2021_04014/epjconf_chep2021_04014.html), System EPJ Web Conf., 2021
