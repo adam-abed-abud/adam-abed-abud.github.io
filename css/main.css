@@ -36,7 +36,7 @@ blockquote p:first-child {
   margin-top: 0;
 }
 hr.small {
-  max-width: 100px;
+  max-width: 1000px;
   margin: 15px auto;
   border-width: 4px;
   border-color: inherit;
@@ -465,7 +465,7 @@ footer .theme-by {
 }
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
-  font-size: 27px;
+  font-size: 22px;
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
