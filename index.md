@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Adam Abed Abud
+title: Adam Abed Abud | ادم الخميسي
 subtitle: Computer Engineer | Applied Scientist | Fellow at CERN
 use-site-title: true
 ---
@@ -26,17 +26,19 @@ In the past I have worked on:
 
 ---
 
-<span class="fa fa-heart about-icon"></span>  I'm a learning enthusiast, I am always looking for the next cool project! 
+Some more details on who I am and what I like ....
 
 I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have lived in Italy <img src="../img/italy.png" height="20px" />, Germany <img src="../img/germany.png" height="20px" />, Sweden <img src="../img/sweden.png" height="20px" /> and France/Switzerland <img src="../img/france.png" height="20px" /> <img src="../img/switzerland.png" height="20px" />
 
-Interest outside of physics/science/computers/engineering include geopolitics, humanitarian causes, recipe developer, history of the Middle East
+My interests outside of science and computers include geopolitics, humanitarian causes, climate and environment protection, recipe developer, history of the Middle East. I'm deeply interested in exploring and fostering fostering cross-cultural understanding. 
+
+<span class="fa fa-heart about-icon"></span>  I'm a learning enthusiast, I am always looking for the next cool project! 
 
 
 
 ---
 ## Contact
-Reach out to me by using any of my social accounts 
+If you want to get to know me better, reach out to me by using any of my social accounts 
 
 <p align="left">
   <a href="https://twitter.com/Adam_AbedAbud"><img src="https://img.shields.io/badge/Twitter-28a9e2?style=flat&logo=twitter&logoColor=white"/></a>
