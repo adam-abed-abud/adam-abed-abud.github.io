@@ -128,12 +128,7 @@ An example of application of the Dijkstra's algorithm is to find the shortest pa
 ```cpp
 int main() {
     // Example graph with weighted edges
-    vector<vector<pair<int, int>>> cityGraph = {
-        {{1, 4}, {2, 2}},
-        {{0, 4}, {2, 5}, {3, 10}},
-        {{0, 2}, {1, 5}, {3, 3}},
-        {{1, 10}, {2, 3}}
-    };
+    vector<vector<pair<int, int>>> cityGraph = {};
 
     // Starting from city 0
     int startCity = 0;
