@@ -31,11 +31,9 @@ In the context of weighted graphs, finding the shortest or most cost-effective p
 
 Let's start by implementing a weighted graph data structure in C++. This achieved with the following piece of code
 
-
-```cpp
+```
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 int main() {
@@ -51,8 +49,8 @@ int main() {
 
     return 0;
 }
-
 ```
+
 
 In this example, the weighted graph is represented using a vector of vectors, where each inner vector contains pairs representing neighboring nodes and their corresponding edge weights.
 
