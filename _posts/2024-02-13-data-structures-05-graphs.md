@@ -39,12 +39,7 @@ using namespace std;
 int main() {
     // Weighted graph represented as an adjacency list
     
-    //vector<vector<pair<int, int>>> weightedGraph = {
-    //    {{1, 4}, {2, 2}},
-    //    {{0, 4}, {2, 5}, {3, 10}},
-    //    {{0, 2}, {1, 5}, {3, 3}},
-    //    {{1, 10}, {2, 3}}
-    //};
+    //vector<vector<pair<int, int>>> weightedGraph = {}
 
     // Each pair {v, w} represents an edge from the current node to node v with weight w
 
