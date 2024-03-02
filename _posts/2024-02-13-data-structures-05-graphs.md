@@ -31,28 +31,22 @@ In the context of weighted graphs, finding the shortest or most cost-effective p
 
 Let's start by implementing a weighted graph data structure in C++. This achieved with the following piece of code
 
-
-```cpp
+```
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 int main() {
     // Weighted graph represented as an adjacency list
-    vector<vector<pair<int, int>>> weightedGraph = {
-        {{1, 4}, {2, 2}},
-        {{0, 4}, {2, 5}, {3, 10}},
-        {{0, 2}, {1, 5}, {3, 3}},
-        {{1, 10}, {2, 3}}
-    };
+    
+    //vector<vector<pair<int, int>>> weightedGraph = {}
 
     // Each pair {v, w} represents an edge from the current node to node v with weight w
 
     return 0;
 }
-
 ```
+
 
 In this example, the weighted graph is represented using a vector of vectors, where each inner vector contains pairs representing neighboring nodes and their corresponding edge weights.
 
@@ -134,12 +128,7 @@ An example of application of the Dijkstra's algorithm is to find the shortest pa
 ```cpp
 int main() {
     // Example graph with weighted edges
-    vector<vector<pair<int, int>>> cityGraph = {
-        {{1, 4}, {2, 2}},
-        {{0, 4}, {2, 5}, {3, 10}},
-        {{0, 2}, {1, 5}, {3, 3}},
-        {{1, 10}, {2, 3}}
-    };
+    vector<vector<pair<int, int>>> cityGraph = {};
 
     // Starting from city 0
     int startCity = 0;
