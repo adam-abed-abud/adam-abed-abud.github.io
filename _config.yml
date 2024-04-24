@@ -27,15 +27,15 @@ navbar-links:
   About Me: "aboutme"
   Publications: "publications"      
   Blog: "blog"
-  Data Stories: "DataStories"
+  #Data Stories: "DataStories"
   Links:
     - Pointers: "pointers"
     - Weather: "weather"    
     - Climate: "climate"        
     - Tetris: "tetris"  
-  CERN:
-    - LHC: "lhc" 
-    - Outreach: "outreach"    
+  #CERN:
+  #  - LHC: "lhc" 
+  #  - Outreach: "outreach"    
  
     
     
