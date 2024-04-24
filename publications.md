@@ -22,14 +22,14 @@ Orcid ID 0000-0002-2788-3822
 *  [Let's get our hands dirty: a comprehensive evaluation of DAQDB, key-value store for petascale hot storage](https://indico.cern.ch/event/708041/contributions/3276145/), Proceedings of the CHEP 2019 conference, Adelaide (Australia).
 *  [Performance evaluation of distributed file systems for the phase-II upgrade of the ATLAS experiment at CERN](https://indico.cern.ch/event/708041/contributions/3276145/), Proceedings of the conference Advanced Computing and Analysis Techniques in Physics Research (ACAT 2019, Saas Fee, Switzerland) 
 
-## **Physics** (selection of recent results)
+## **Physics** 
 **DUNE collaboration**
-* [Performance of a modular ton-scale pixel-readout liquid argon time projection chamber](https://arxiv.org/pdf/2403.03212), DUNE Collaboration, Adam Abed Abud(CERN) et al., (March 5, 2024)
-* [The DUNE Far Detector Vertical Drift Technology, Technical Design Report ](https://arxiv.org/pdf/2312.03130), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Dec 5, 2023)
-* [Highly-parallelized simulation of a pixelated LArTPC on a GPU](https://arxiv.org/pdf/2212.09807.pdf), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Dec 19, 2022)
+* [Performance of a modular ton-scale pixel-readout liquid argon time projection chamber](https://arxiv.org/pdf/2403.03212), DUNE Collaboration, Adam Abed Abud (CERN) et al., (March 5, 2024)
+* [The DUNE Far Detector Vertical Drift Technology, Technical Design Report ](https://arxiv.org/pdf/2312.03130), DUNE Collaboration, Adam Abed Abud (CERN) et al., (Dec 5, 2023)
+* [Highly-parallelized simulation of a pixelated LArTPC on a GPU](https://arxiv.org/pdf/2212.09807.pdf), DUNE Collaboration, Adam Abed Abud (CERN) et al., (Dec 19, 2022)
 * [DUNE Offline Computing Conceptual Design Report](https://arxiv.org/pdf/2210.15665), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Oct 28, 2022)
-* [Reconstruction of interactions in the ProtoDUNE-SP detector with Pandora](https://arxiv.org/pdf/2206.14521), DUNE Collaboration, Adam Abed Abud(CERN) et al., (June 29, 2022)
-* [Separation of track- and shower-like energy deposits in ProtoDUNE-SP using a convolutional neural network](https://arxiv.org/pdf/2203.17053), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Mar 31, 2022)
+* [Reconstruction of interactions in the ProtoDUNE-SP detector with Pandora](https://arxiv.org/pdf/2206.14521), DUNE Collaboration, Adam Abed Abud (CERN) et al., (June 29, 2022)
+* [Separation of track- and shower-like energy deposits in ProtoDUNE-SP using a convolutional neural network](https://arxiv.org/pdf/2203.17053), DUNE Collaboration, Adam Abed Abud (CERN) et al., (Mar 31, 2022)
 
 **ATLAS collaboration**
 * [Search for high-mass WγW\gammaWγ and ZγZ\gammaZγ resonances using hadronic W/Z boson decays from 139 fb−1^{-1}−1 of pppppp collisions at s=\sqrt{s}=s13 TeV with the ATLAS detector](https://arxiv.org/pdf/2304.11962), ATLAS Collaboration, Georges Aad(Marseille, CPPM) et al. (Apr 24, 2023)
