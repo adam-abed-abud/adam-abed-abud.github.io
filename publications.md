@@ -24,7 +24,8 @@ Orcid ID 0000-0002-2788-3822
 
 ## **Physics** (selection of recent results)
 **DUNE collaboration**
-* [Impact of cross-section uncertainties on supernova neutrino spectral parameter fitting in the Deep Underground Neutrino Experiment](https://arxiv.org/pdf/2303.17007), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Mar 29, 2023)
+* [Performance of a modular ton-scale pixel-readout liquid argon time projection chamber](https://arxiv.org/pdf/2403.03212), DUNE Collaboration, Adam Abed Abud(CERN) et al., (March 5, 2024)
+* [The DUNE Far Detector Vertical Drift Technology, Technical Design Report ](https://arxiv.org/pdf/2312.03130), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Dec 5, 2023)
 * [Highly-parallelized simulation of a pixelated LArTPC on a GPU](https://arxiv.org/pdf/2212.09807.pdf), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Dec 19, 2022)
 * [DUNE Offline Computing Conceptual Design Report](https://arxiv.org/pdf/2210.15665), DUNE Collaboration, Adam Abed Abud(CERN) et al., (Oct 28, 2022)
 * [Reconstruction of interactions in the ProtoDUNE-SP detector with Pandora](https://arxiv.org/pdf/2206.14521), DUNE Collaboration, Adam Abed Abud(CERN) et al., (June 29, 2022)

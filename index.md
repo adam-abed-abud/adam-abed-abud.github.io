@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Adam Abed Abud | ادم الخميسي
+title: Adam ABED ABUD   
 subtitle: Computer Engineer | Applied Scientist 
 use-site-title: true
 ---
@@ -19,9 +19,9 @@ In the past I have worked on:
 - Performance of distributed file systems for large scale data-flow architectures
 -->
 
-<span class="fa fa-rocket about-icon"></span>  As a research scientist, I'm interested in diverse fields such as Data storage technologies, Data Acquisition systems, Data Analysis, Machine Learning. Check out my [publications](https://adam-abed-abud.github.io/publications/) to know more on what I work on 
+<span class="fa fa-rocket about-icon"></span>  As a research scientist, I'm interested in diverse fields such as Data storage technologies, Data Acquisition systems, Data Analysis, Machine Learning. Check out my [publications](https://adam-abed-abud.github.io/publications/) to know more about my past research activities. 
 
-<span class="fa fa-university about-icon"></span>  I have a MSc in Nuclear and Particle Physics from Italy and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK  
+<span class="fa fa-university about-icon"></span>  I have a MSc in Nuclear and Particle Physics from Italy and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK.  
 
 
 
@@ -39,6 +39,7 @@ If you want to get to know me better, reach out to me by using any of my social 
 </p>
 
 <!---
+
 ---
 ## News
 
