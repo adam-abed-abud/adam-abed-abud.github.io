@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Adam Abed Abud | ادم الخميسي
-subtitle: Computer Engineer | Applied Scientist | Fellow at CERN
+subtitle: Computer Engineer | Applied Scientist 
 use-site-title: true
 ---
 
@@ -24,15 +24,6 @@ In the past I have worked on:
 <span class="fa fa-university about-icon"></span>  I have a MSc in Nuclear and Particle Physics from Italy and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK  
 
 
----
-
-Some more details on who I am and what I like ....
-
-I'm originally from Iraq <img src="../img/iraq.png" height="20px" /> and I have lived in Italy <img src="../img/italy.png" height="20px" />, Germany <img src="../img/germany.png" height="20px" />, Sweden <img src="../img/sweden.png" height="20px" /> and France/Switzerland <img src="../img/france.png" height="20px" /> <img src="../img/switzerland.png" height="20px" />
-
-My interests outside of science and computers include geopolitics, humanitarian causes, climate and environment protection, recipe developer, history of the Middle East. I'm deeply interested in exploring and fostering cross-cultural understanding. 
-
-<span class="fa fa-heart about-icon"></span>  I'm a learning enthusiast, I am always looking for the next cool project! 
 
 
 
