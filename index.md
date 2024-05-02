@@ -38,6 +38,8 @@ If you want to get to know me better, reach out to me by using any of my social 
   <a href="https://www.instagram.com/adam_abedabud/"><img src="https://img.shields.io/badge/Instagram-dd2a7b?style=flat&logo=instagram&logoColor=white"/></a>
 </p>
 
+https://calendly.com/aaadam94/30min
+
 <!---
 
 ---
