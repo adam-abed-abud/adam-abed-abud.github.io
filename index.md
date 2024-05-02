@@ -29,7 +29,7 @@ In the past I have worked on:
 
 ---
 ## Contact
-If you want to get to know me better, reach out to me by using any of my social accounts 
+Reach out to me by using any of my social accounts or book a 30 min meeting!
 
 <p align="left">
   <a href="https://twitter.com/Adam_AbedAbud"><img src="https://img.shields.io/badge/Twitter-28a9e2?style=flat&logo=twitter&logoColor=white"/></a>
@@ -38,7 +38,10 @@ If you want to get to know me better, reach out to me by using any of my social 
   <a href="https://www.instagram.com/adam_abedabud/"><img src="https://img.shields.io/badge/Instagram-dd2a7b?style=flat&logo=instagram&logoColor=white"/></a>
 </p>
 
-https://calendly.com/aaadam94/30min
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/aaadam94" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
 
 <!---
 
