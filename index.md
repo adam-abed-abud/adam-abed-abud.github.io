@@ -6,7 +6,7 @@ use-site-title: true
 ---
 
 
-![image](img/avatar-icon.png){: style="float: left"}
+![image](img/avatar-icon.png){: style="float: left"; width: 150px; height: 150px; border-radius: 50%; object-fit: cover}
 
 <span class="fa fa-code about-icon"></span> I work as an **Applied Scientist/Computer Engineer** at [CERN](https://home.cern/). I specialize in [Data Acquisition Systems](https://github.com/DUNE-DAQ/) for particle physics experiments, mainly focusing on software development and optimization of data intensive applications 
 
