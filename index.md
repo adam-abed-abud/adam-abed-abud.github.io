@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Adam ABED ABUD   
-subtitle: Computer Engineer | Applied Scientist 
+subtitle: Applied Scientist | Computer Engineer | PhD
 use-site-title: true
 ---
 
+
+![image](img/avatar-icon.png){: style="float: left"}
 
 <span class="fa fa-code about-icon"></span> I work as an **Applied Scientist/Computer Engineer** at [CERN](https://home.cern/). I specialize in [Data Acquisition Systems](https://github.com/DUNE-DAQ/) for particle physics experiments, mainly focusing on software development and optimization of data intensive applications 
 
