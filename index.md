@@ -13,13 +13,6 @@ use-site-title: true
             margin-bottom: 20px;
         }
 
-        .avatar-container_main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 20px;
-        }
-
         .avatar_main {
             border-radius: 70%;
             margin-right: 30px;
@@ -30,21 +23,6 @@ use-site-title: true
 
         .text_main {
             max-width: 800px;
-        }
-
-        .social-icons {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .social-icons a {
-            margin: 0 5px;
-        }
-
-        .social-icons img {
-            width: 24px;
-            height: 24px;
         }
 
         h2 {
@@ -62,20 +40,8 @@ use-site-title: true
 
 <body>
   <div class="container_main">
-   <div class="avatar-container_main">
    <img src="img/avatar-icon.png" alt="Avatar" class="avatar_main">
-   <div class="social-icons">
-                <a href="https://github.com/yourusername" target="_blank">
-                    <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="GitHub">
-                </a>
-                <a href="https://instagram.com/yourusername" target="_blank">
-                    <img src="https://image.flaticon.com/icons/png/512/1409/1409946.png" alt="Instagram">
-                </a>
-   </div>
-
-
-   </div>
-   <div class="text_main">
+  <div class="text_main">
 
 
 
