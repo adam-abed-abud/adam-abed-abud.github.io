@@ -7,13 +7,13 @@ use-site-title: true
 
 <head>
     <style>
-        .container {
+        .container_main {
             display: flex;
             align-items: flex-start;
             margin-bottom: 20px;
         }
 
-        .avatar {
+        .avatar_main {
             border-radius: 50%;
             margin-right: 20px;
             width: 100px;
@@ -21,7 +21,7 @@ use-site-title: true
             object-fit: cover;
         }
 
-        .text {
+        .text_main {
             max-width: 600px;
         }
 
@@ -37,14 +37,21 @@ use-site-title: true
 </head>
 
 
+<br></br>
+<br></br>
 
 <body>
-  <div class="container">
-   <img src="img/avatar-icon.png" alt="Avatar" class="avatar">
-   <div class="text">
+  <div class="container_main">
+   <img src="img/avatar-icon.png" alt="Avatar" class="avatar_main">
+   <div class="text_main">
+
 <span class="fa fa-code about-icon"></span> I work as an **Applied Scientist/Computer Engineer** at [CERN](https://home.cern/). I specialize in [Data Acquisition Systems](https://github.com/DUNE-DAQ/) for particle physics experiments, mainly focusing on software development and optimization of data intensive applications
 
+<br></br>
+
 <span class="fa fa-rocket about-icon"></span>  As a research scientist, I'm interested in diverse fields such as Data storage technologies, Data Acquisition systems, Data Analysis, Machine Learning. Check out my [publications](https://adam-abed-abud.github.io/publications/) to know more about my past research activities.
+
+<br></br>
 
 <span class="fa fa-university about-icon"></span>  I have a MSc in Nuclear and Particle Physics from Italy and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK.
 
