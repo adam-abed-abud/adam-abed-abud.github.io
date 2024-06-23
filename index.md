@@ -6,6 +6,15 @@ use-site-title: true
 ---
 
 
+<div class="container_main">
+  <img src="img/avatar-icon.png" alt="Avatar" class="avatar_main">
+   <div class="text">
+   <h2>John Doe</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dolor eu nisi tristique efficitur. Quisque ac libero nec quam pharetra blandit non eu lacus. Aliquam erat volutpat. Phasellus interdum, nulla id hendrerit malesuada, turpis sapien laoreet purus, eget dictum lorem mi in justo.</p>
+   </div>
+</div>
+
+
 <img src="img/avatar-icon.png" alt="Avatar" style="float: left; width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
 
 <span class="fa fa-code about-icon"></span> I work as an **Applied Scientist/Computer Engineer** at [CERN](https://home.cern/). I specialize in [Data Acquisition Systems](https://github.com/DUNE-DAQ/) for particle physics experiments, mainly focusing on software development and optimization of data intensive applications 
