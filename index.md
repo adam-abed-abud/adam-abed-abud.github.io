@@ -13,6 +13,13 @@ use-site-title: true
             margin-bottom: 20px;
         }
 
+        .avatar-container_main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 20px;
+        }
+
         .avatar_main {
             border-radius: 70%;
             margin-right: 30px;
@@ -23,6 +30,21 @@ use-site-title: true
 
         .text_main {
             max-width: 800px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
         }
 
         h2 {
@@ -40,20 +62,32 @@ use-site-title: true
 
 <body>
   <div class="container_main">
+   <div class="avatar-container_main">
    <img src="img/avatar-icon.png" alt="Avatar" class="avatar_main">
+   <div class="social-icons">
+                <a href="https://github.com/yourusername" target="_blank">
+                    <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="GitHub">
+                </a>
+                <a href="https://instagram.com/yourusername" target="_blank">
+                    <img src="https://image.flaticon.com/icons/png/512/1409/1409946.png" alt="Instagram">
+                </a>
+   </div>
+
+
+   </div>
    <div class="text_main">
 
 
 
-<p> <span class="fa fa-code about-icon"></span> I work as an <strong>Applied Scientist/Computer Engineer</strong> at <a href="https://home.cern/">CERN</a>. I specialize in <a href="https://github.com/DUNE-DAQ/">Data Acquisition Systems</a> for particle physics experiments, mainly focusing on software development and optimization of data intensive applications.</p>
+<p> <span class="fa fa-code about-icon"></span> I work as an <strong>Applied Scientist/Computer Engineer/Algorithm developer</strong>. I specialize in <a href="https://github.com/DUNE-DAQ/">Data Acquisition Systems</a> at <a href="https://home.cern/">CERN</a>, mainly focusing on software development and optimization of data intensive applications.</p>
 
 
 
-<p> <span class="fa fa-rocket about-icon"></span> As a research scientist, I'm interested in fields such as Data storage technologies, System Architecture, Data Acquisition systems, Machine Learning at scale. 
+<p> <span class="fa fa-rocket about-icon"></span> As a research scientist, I'm interested in fields such as Data storage technologies, System Architecture, Data Acquisition systems, Machine Learning at scale. </p> 
 
 
 
-<span class="fa fa-university about-icon"></span>  I have a MSc in Nuclear and Particle Physics from Italy and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK.
+<p> <span class="fa fa-university about-icon"></span>  I have a MSc in Nuclear and Particle Physics from Italy and a PhD in Applied Physics specializing in computer engineering and data storage technologies from the UK. </p>
 
 
    </div>
