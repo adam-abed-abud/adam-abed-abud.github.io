@@ -24,34 +24,6 @@ h1,h2,h3,h4,h5,h6 {
 a {
   color: #008AFF;
 }
-
-.cotainer_main {
-  display: flex;
-  align-items: flex-start;
-}
-.avatar_main {
-    border-radius: 50%;
-    margin-right: 20px;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-.text_main {
-    max-width: 600px;
-}
-
-h2_main {
-    margin: 0;
-    padding-bottom: 10px;
-}
-
-p_main {
-    margin: 0;
-}
-
-
-
 a:hover,
 a:focus {
   color: #0085a1;

@@ -5,14 +5,46 @@ subtitle: Applied Scientist | Computer Engineer | PhD
 use-site-title: true
 ---
 
+<head>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
 
-<div class="container_main">
-  <img src="img/avatar-icon.png" alt="Avatar" class="avatar_main">
-   <div class="text_main">
-   <h2_main>John Doe</h2_main>
-   <p_main>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dolor eu nisi tristique efficitur. Quisque ac libero nec quam pharetra blandit non eu lacus. Aliquam erat volutpat. Phasellus interdum, nulla id hendrerit malesuada, turpis sapien laoreet purus, eget dictum lorem mi in justo.</p_main>
+        .avatar {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .text {
+            max-width: 600px;
+        }
+
+        h2 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+   <img src="img/avatar-icon.png" alt="Avatar" class="avatar">
+   <div class="text">
+   <h2>John Doe</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dolor eu nisi tristique efficitur. Quisque ac libero nec quam pharetra blandit non eu lacus. Aliquam erat volutpat. Phasellus interdum, nulla id hendrerit malesuada, turpis sapien laoreet purus, eget dictum lorem mi in justo.</p>
    </div>
-</div>
+  </div>
+</body>
+
 
 
 <img src="img/avatar-icon.png" alt="Avatar" style="float: left; width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
