@@ -37,6 +37,20 @@ a {
     object-fit: cover;
 }
 
+.text_main {
+    max-width: 600px;
+}
+
+h2_main {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+p_main {
+    margin: 0;
+}
+
+
 
 a:hover,
 a:focus {

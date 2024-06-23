@@ -8,9 +8,9 @@ use-site-title: true
 
 <div class="container_main">
   <img src="img/avatar-icon.png" alt="Avatar" class="avatar_main">
-   <div class="text">
-   <h2>John Doe</h2>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dolor eu nisi tristique efficitur. Quisque ac libero nec quam pharetra blandit non eu lacus. Aliquam erat volutpat. Phasellus interdum, nulla id hendrerit malesuada, turpis sapien laoreet purus, eget dictum lorem mi in justo.</p>
+   <div class="text_main">
+   <h2_main>John Doe</h2_main>
+   <p_main>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dolor eu nisi tristique efficitur. Quisque ac libero nec quam pharetra blandit non eu lacus. Aliquam erat volutpat. Phasellus interdum, nulla id hendrerit malesuada, turpis sapien laoreet purus, eget dictum lorem mi in justo.</p_main>
    </div>
 </div>
 
