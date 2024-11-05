@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Storage Device Endurance Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            border: none;
+            color: #333333;
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333333;
+            border: 1px solid #ced4da;
+        }
+        .form-control::placeholder {
+            color: #6c757d;
+        }
+        .form-control:focus {
+            background: rgba(255, 255, 255, 1);
+            color: #333333;
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+        .btn-primary {
+            background: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+        .btn-secondary {
+            background: #6c757d;
+            border: none;
+        }
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        .result {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            text-align: center;
+            color: #333333; /* Changed from white to dark color */
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center mb-5">Storage Device Endurance Calculator</h1>
+    <h2 class="text-center mb-5">Adapted from CERN (F. Le Goff) </h2>
+    <div class="card p-4">
+        <form id="enduranceForm">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="warranty" class="form-label">Warranty (Years)</label>
+                    <input type="number" step="any" class="form-control" id="warranty" placeholder="Enter Warranty Period">
+                </div>
+                <div class="col-md-6">
+                    <label for="dwpd" class="form-label">DWPD (Disk Writes Per Day)</label>
+                    <input type="number" step="any" class="form-control" id="dwpd" placeholder="Enter DWPD">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="capacity" class="form-label">Capacity (GB)</label>
+                    <input type="number" step="any" class="form-control" id="capacity" placeholder="Enter Capacity">
+                </div>
+                <div class="col-md-6">
+                    <label for="pbw" class="form-label">PBW (Petabytes Written)</label>
+                    <input type="number" step="any" class="form-control" id="pbw" placeholder="Enter PBW">
+                </div>
+            </div>
+            <p class="text-center">Leave the field you want to calculate empty.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <button type="button" class="btn btn-primary btn-lg me-md-2" onclick="calculate()">Calculate</button>
+                <button type="button" class="btn btn-secondary btn-lg" onclick="clearFields()">Clear Fields</button>
+            </div>
+        </form>
+        <div id="result" class="result fade-in"></div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function calculate() {
+        const warranty = parseFloat(document.getElementById('warranty').value);
+        const dwpd = parseFloat(document.getElementById('dwpd').value);
+        const capacity = parseFloat(document.getElementById('capacity').value);
+        const pbw = parseFloat(document.getElementById('pbw').value);
+
+        let missingFields = 0;
+        if (isNaN(warranty)) missingFields++;
+        if (isNaN(dwpd)) missingFields++;
+        if (isNaN(capacity)) missingFields++;
+        if (isNaN(pbw)) missingFields++;
+
+        if (missingFields !== 1) {
+            alert('Please leave only one field empty to calculate.');
+            return;
+        }
+
+        let resultText = '';
+        const daysInYear = 365.25; // Considering leap years
+        const conversionFactor = 1e6; // For PB to GB conversion
+
+        if (isNaN(warranty)) {
+            const calculatedWarranty = (pbw * conversionFactor) / (dwpd * capacity * daysInYear);
+            document.getElementById('warranty').value = calculatedWarranty.toFixed(2);
+            resultText = `Calculated Warranty: ${calculatedWarranty.toFixed(2)} Years`;
+        } else if (isNaN(dwpd)) {
+            const calculatedDWPD = (pbw * conversionFactor) / (warranty * capacity * daysInYear);
+            document.getElementById('dwpd').value = calculatedDWPD.toFixed(2);
+            resultText = `Calculated DWPD: ${calculatedDWPD.toFixed(2)} Disk Writes Per Day`;
+        } else if (isNaN(capacity)) {
+            const calculatedCapacity = (pbw * conversionFactor) / (warranty * dwpd * daysInYear);
+            document.getElementById('capacity').value = calculatedCapacity.toFixed(2);
+            resultText = `Calculated Capacity: ${calculatedCapacity.toFixed(2)} GB`;
+        } else if (isNaN(pbw)) {
+            const calculatedPBW = (warranty * dwpd * capacity * daysInYear) / conversionFactor;
+            document.getElementById('pbw').value = calculatedPBW.toFixed(2);
+            resultText = `Calculated PBW: ${calculatedPBW.toFixed(2)} Petabytes Written`;
+        }
+
+        document.getElementById('result').innerText = resultText;
+        document.getElementById('result').classList.add('fade-in');
+        setTimeout(() => {
+            document.getElementById('result').classList.remove('fade-in');
+        }, 500);
+    }
+
+    function clearFields() {
+        document.getElementById('warranty').value = '';
+        document.getElementById('dwpd').value = '';
+        document.getElementById('capacity').value = '';
+        document.getElementById('pbw').value = '';
+        document.getElementById('result').innerText = '';
+    }
+</script>
+</body>
+</html>
+
