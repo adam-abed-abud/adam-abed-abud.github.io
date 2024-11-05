@@ -5,7 +5,7 @@
 @use "sass:color";
 
 :root {
-  --global-bg-color-navbar: #e8e4e4;
+  --global-bg-color-navbar: #{$gray-nav};
   --global-bg-color: #{$white-color};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
