@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Keyboard</title>
+    <link rel="stylesheet" href="arabic_keyboard/styles.css">
+</head>
+<body>
+    <div class="notification" id="notification">Text copied!</div>
+    <div class="container">
+        <h1>Arabic Keyboard</h1>
+        <textarea id="textOutput" placeholder="Click the letters to type here"></textarea>
+        <div id="local-suggestions" class="autocomplete-suggestions"></div>
+        <div id="wikipedia-suggestions" class="autocomplete-suggestions"></div>        
+        <div class="keyboard" id="keyboard">
+            <!-- Keyboard keys will be dynamically loaded -->
+        </div>
+        <div class="button-container">
+            <button class="copy-button" id="copyButton">Copy Text</button>
+            <button class="emoji-button" id="emojiButton">😊 Emojis</button>
+            <button class="clear-button" id="clearButton">Clear Text</button>
+        </div>
+        <div class="emoji-dropdown" id="emojiDropdown">
+            <!-- Emoji options will be dynamically loaded -->
+        </div>
+    </div>
+    <script src="arabic_keyboard/keys.js"></script>
+    <script src="arabic_keyboard/emojis.js"></script>
+    <script src="arabic_keyboard/keyboard.js"></script>
+
+</body>
+</html>
