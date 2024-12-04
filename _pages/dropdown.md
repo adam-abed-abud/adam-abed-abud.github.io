@@ -13,4 +13,7 @@ children:
   - title: divider
   - title: Tetris
     permalink: /tetris/index.html
+  - title: divider
+  - title: Arabic Keyboard
+    permalink: /arabic-keyboard/
 ---
