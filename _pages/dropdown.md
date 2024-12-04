@@ -15,5 +15,5 @@ children:
     permalink: /tetris/index.html
   - title: divider
   - title: Arabic Keyboard
-    permalink: /arabic-keyboard/
+    permalink: /arabic-keyboard
 ---
