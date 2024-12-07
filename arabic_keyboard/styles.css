@@ -1,4 +1,33 @@
 /* General Styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .keyboard {
+        flex-direction: column;
+    }
+
+    .key-row {
+        justify-content: space-around;
+    }
+
+    .key {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .emoji-dropdown {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #f9f9f9;

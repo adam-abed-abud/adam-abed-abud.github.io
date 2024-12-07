@@ -171,6 +171,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     keyboard.addEventListener('click', function (e) {
+        handleKeyClick(e);
+    });
+    
+    keyboard.addEventListener('touchstart', function (e) {
+        e.preventDefault(); // Prevent scrolling when touching the keys
+        handleKeyClick(e);
+    });
+    
+    function handleKeyClick(e) {
         if (e.target.classList.contains('key')) {
             if (e.target.classList.contains('space-key')) {
                 textOutput.value += ' ';
@@ -188,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
             textOutput.focus();
             textOutput.dispatchEvent(new Event('input')); // Manually trigger the input event
         }
-    });
+    };
 
 
     emojiButton.addEventListener('click', function (e) {
