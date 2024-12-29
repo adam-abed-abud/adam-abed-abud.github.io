@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: Home
 permalink: /
 subtitle: Applied Scientist | Computer Engineer | PhD
 
