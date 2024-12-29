@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: none
 permalink: /man/
 title: About
-nav: false
+nav: true
 nav_order: 1
 ---
 
