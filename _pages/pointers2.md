@@ -70,3 +70,4 @@ permalink: /pointers/
   - [Maps True Size](https://thetruesize.com/)
   - [One Minute Physics](https://www.youtube.com/user/minutephysics/)
   - [Stellarium](https://stellarium-web.org/)
+  - [1000 tools](https://1000.tools/)
