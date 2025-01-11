@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tracker</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #85d8ce, #0892d0);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #d4f1f9;
+        }
+
+        .counter {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ffd700;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            background: #ffd700;
+            color: #333;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        button:hover {
+            background: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        .water-image {
+            position: relative;
+            width: 200px;
+            height: 400px;
+            margin: 20px auto;
+            background: url('https://via.placeholder.com/200x400?text=Glass+Outline') no-repeat center/contain;
+        }
+
+        .water-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            border-radius: 0 0 10px 10px;
+            transition: height 0.5s ease-in-out;
+        }
+
+        .progress-text {
+            font-size: 1em;
+            color: #d4f1f9;
+            margin-top: 15px;
+        }
+
+        .progress-text span {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .goal-achieved {
+            font-size: 1.5em;
+            color: #ff4500;
+            animation: pulse 1s infinite;
+        }
+
+        .gender-buttons {
+            margin-top: 20px;
+        }
+
+        .gender-buttons button {
+            margin: 5px;
+            padding: 8px 15px;
+            font-size: 0.9em;
+            background: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .gender-buttons button.active {
+            background: #ffd700;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .gender-buttons button:hover {
+            background: #007bff;
+        }
+
+        .reset-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .reset-button:hover {
+            background: #e55347;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Water Tracker</h1>
+        <p>Stay hydrated and reach your daily goal!</p>
+        <div class="counter" id="waterCount">0</div>
+        <button onclick="addGlass()">Add a Glass of Water</button>
+        <div class="water-image">
+            <div class="water-fill" id="waterFill"></div>
+        </div>
+        <div class="progress-text">You have completed <span id="progressPercentage">0%</span> of your goal and drank <span id="litersConsumed">0L</span> of water.</div>
+        <div class="goal-achieved" id="goalAchieved" style="display: none;">Goal Achieved! 🎉</div>
+        <div class="gender-buttons">
+            <button id="maleButton" onclick="setGender('male')">Male</button>
+            <button id="femaleButton" onclick="setGender('female')">Female</button>
+        </div>
+        <button class="reset-button" onclick="resetTracker()">Reset</button>
+    </div>
+
+    <script>
+        let count = 0;
+        let maxGlasses = 8; // Default maximum number of glasses
+        const glassVolume = 0.25; // Volume of one glass in liters
+
+        function setGender(gender) {
+            const maleButton = document.getElementById('maleButton');
+            const femaleButton = document.getElementById('femaleButton');
+
+            if (gender === 'male') {
+                maxGlasses = 10; // Adjust for male
+                maleButton.classList.add('active');
+                femaleButton.classList.remove('active');
+            } else if (gender === 'female') {
+                maxGlasses = 8; // Adjust for female
+                femaleButton.classList.add('active');
+                maleButton.classList.remove('active');
+            }
+            resetTracker();
+        }
+
+        function addGlass() {
+            if (count < maxGlasses) {
+                count++;
+                document.getElementById('waterCount').textContent = count;
+                updateWaterFill();
+                updateProgressText();
+                checkGoalAchieved();
+            }
+        }
+
+        function resetTracker() {
+            count = 0;
+            document.getElementById('waterCount').textContent = count;
+            updateWaterFill();
+            updateProgressText();
+            document.getElementById('goalAchieved').style.display = 'none';
+        }
+
+        function updateWaterFill() {
+            const waterFill = document.getElementById('waterFill');
+            const fillPercentage = (count / maxGlasses) * 100;
+            waterFill.style.height = fillPercentage + '%';
+        }
+
+        function updateProgressText() {
+            const progressPercentage = document.getElementById('progressPercentage');
+            const litersConsumed = document.getElementById('litersConsumed');
+            const percentage = Math.round((count / maxGlasses) * 100);
+            const totalLiters = (count * glassVolume).toFixed(2);
+            progressPercentage.textContent = percentage + '%';
+            litersConsumed.textContent = totalLiters + 'L';
+        }
+
+        function checkGoalAchieved() {
+            const goalAchieved = document.getElementById('goalAchieved');
+            if (count === maxGlasses) {
+                goalAchieved.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
