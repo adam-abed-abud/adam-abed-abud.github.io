@@ -135,8 +135,12 @@
                 // Show loader
                 document.getElementById('loader').style.display = 'block';
 
-                const linUrl = `https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/ec2/USD/current/ec2-ondemand-without-sec-sel/${encodeURIComponent(regionName)}/Linux/index.json`;
-                const winUrl = `https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/ec2/USD/current/ec2-ondemand-without-sec-sel/${encodeURIComponent(regionName)}/Windows/index.json`;
+                // const linUrl = `https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/ec2/USD/current/ec2-ondemand-without-sec-sel/${encodeURIComponent(regionName)}/Linux/index.json`;
+                // const winUrl = `https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/ec2/USD/current/ec2-ondemand-without-sec-sel/${encodeURIComponent(regionName)}/Windows/index.json`;
+
+				
+				const linUrl = `https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/ec2/USD/current/ec2-ondemand-without-sec-sel/${encodeURIComponent(regionName)}/Linux/index.json?timestamp=1639230933739`;
+				const winUrl = `https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/ec2/USD/current/ec2-ondemand-without-sec-sel/${encodeURIComponent(regionName)}/Windows/index.json?timestamp=1639230933739`
 
                 try {
                     // Fetch Linux data
