@@ -32,6 +32,7 @@ permalink: /pointers/
   - [Saturday Morning Breakfast Cereal](https://www.smbc-comics.com)
   - [IP Information](https://ipleak.net)
   - [CPU, memory and graphics benchmarks](https://www.cpubenchmark.net/)
+  - [App creator: Dream it, code it](https://cerebrascoder.com/)
 
 - **Image Signal Processing**
   - [NIST resources for Image & Signal Processing](https://www.nist.gov/image-signal-processing)
