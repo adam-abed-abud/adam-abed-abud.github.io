@@ -31,6 +31,7 @@ permalink: /pointers/
   - [Daily Computer Science](https://blog.acolyer.org)
   - [Saturday Morning Breakfast Cereal](https://www.smbc-comics.com)
   - [IP Information](https://ipleak.net)
+  - [CPU, memory and graphics benchmarks](https://www.cpubenchmark.net/)
 
 - **Image Signal Processing**
   - [NIST resources for Image & Signal Processing](https://www.nist.gov/image-signal-processing)
@@ -73,3 +74,4 @@ permalink: /pointers/
   - [1000 tools](https://1000.tools/)
   - [IT tools](https://it-tools.tech/)
   - [Code Timeline Visualizer](https://codevi.netlify.app/)
+  - [Vector icons and stickers](https://www.flaticon.com/)
