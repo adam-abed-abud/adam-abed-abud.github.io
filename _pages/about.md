@@ -45,7 +45,7 @@ I'm a learning enthusiast, I am always looking for the next cool project to work
 
 Some more details on who I am and what I like ...
 <li> I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" /> </li>
-<li> My interests outside of science and computers include bio-hacking, mixing cusines from different places, and reading history</li>
+<li> My interests outside of science and computers include bio-hacking, mixing cusines from different places, and reading about history</li>
 
 <!-- <img src="img/avatar-icon.png" alt="Avatar" style="float: left; width: 150px; height: 150px; border-radius: 50%; object-fit: cover;"> 
 -->

@@ -65,6 +65,9 @@ permalink: /pointers/
   - [Watch documentaries for free](https://topdocumentaryfilms.com/)
   - [TED Talks](https://www.ted.com/)
 
+- **Biohacking**
+  - [Muscle Wiki](https://musclewiki.com/)
+
 - **Others**
   - [Quote of the Day](https://uplift.vercel.app/)
   - [xkcd](https://xkcd.com)
