@@ -47,7 +47,9 @@ stock_symbol = "NVDA"
 stock_data = yf.download(stock_symbol, start='2020-01-01', end='2025-01-17')
 ```
 
+
 2. We calculate moving averages for both price and volume:
+
 ```python
 stock_data['Short_Term_MA'] = stock_data['Close'].rolling(window=50).mean()
 stock_data['Long_Term_MA'] = stock_data['Close'].rolling(window=200).mean()
@@ -56,12 +58,12 @@ stock_data['Avg_Volume_20'] = stock_data['Volume'].rolling(window=20).mean()
 
 3. A volume index is created to identify unusual trading activity:
 
-
 ```python
 stock_data['Volume_Index'] = stock_data['Volume'] / stock_data['Avg_Volume_20']
 ```
 
 4. Dynamic threshold
+
 ```python
 dynamic_threshold = stock_data['Volume_Index'].quantile(percentile_level)
 highlight_mask = stock_data['Volume_Index'] > dynamic_threshold
