@@ -46,6 +46,7 @@ permalink: /pointers/
   - [Storage Swiss](https://storageswiss.com/)
   - [Blocks and Files](https://blocksandfiles.com/)
   - [The SSD Guy](https://thessdguy.com/)
+  - [Disk prices](https://diskprices.com/)
 
 - **Development Tools (personal bias)**
   - [Godbolt](https://godbolt.org/)
