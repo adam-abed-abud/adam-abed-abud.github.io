@@ -21,7 +21,8 @@ This project implements a simple analysis of stock trading volumes and price mov
 The implementation uses several Python libraries including pandas for data manipulation, yfinance for stock data retrieval, and matplotlib for visualization. Here's how it works:
 
 0. Some code details
-```
+
+```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance as yf
