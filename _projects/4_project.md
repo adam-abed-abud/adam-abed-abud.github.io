@@ -4,7 +4,7 @@ title: Volume Trading Analysis for NVIDIA stock
 description: Analyzing stock trading volumes and price movements using Python
 img: assets/img/nvida_vol_trading.jpg
 importance: 3
-category: finance
+category: fun
 ---
 
 This project implements a simple analysis of stock trading volumes and price movements using Python. The analysis focuses on identifying significant volume spikes that could indicate important market events or trading patterns. This post is inspired from [GuruFinance Insighs](https://ayratmurtazin.beehiiv.com/)
