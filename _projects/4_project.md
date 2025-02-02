@@ -223,5 +223,3 @@ plt.grid(True)
 plt.show()
 
 ```
-
-{% endraw %}
