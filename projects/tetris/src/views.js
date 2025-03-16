@@ -19,6 +19,24 @@ var gameOver = $('gameOver');
 var btnRestart = $('restart');
 var finalScore = $('finalScore');
 
+// Create pause indicator element
+var pauseIndicator = document.createElement('div');
+pauseIndicator.id = 'pauseIndicator';
+pauseIndicator.className = 'invisible';
+pauseIndicator.innerHTML = '<h2>PAUSED</h2><p>Press P to resume</p>';
+pauseIndicator.style.position = 'absolute';
+pauseIndicator.style.top = '0';
+pauseIndicator.style.left = '0';
+pauseIndicator.style.width = '100%';
+pauseIndicator.style.height = '100%';
+pauseIndicator.style.background = 'rgba(0, 0, 0, 0.7)';
+pauseIndicator.style.color = '#fff';
+pauseIndicator.style.display = 'flex';
+pauseIndicator.style.flexDirection = 'column';
+pauseIndicator.style.justifyContent = 'center';
+pauseIndicator.style.alignItems = 'center';
+pauseIndicator.style.zIndex = '99';
+pauseIndicator.style.borderRadius = '5px';
 
 //defaults
 var SIDE_WIDTH = consts.SIDE_WIDTH;
@@ -83,6 +101,11 @@ var tetrisView = {
 	  this.scene = scene;
 	  this.preview = preview;
 	  this.btnRestart = btnRestart;
+	  
+	  // Add pause indicator to the scene
+	  scene.parentNode.appendChild(pauseIndicator);
+	  this.pauseIndicator = pauseIndicator;
+	  
 	  layoutView(this.container,maxW,maxH);
 	  this.scene.focus();
 
@@ -114,6 +137,10 @@ var tetrisView = {
 	// Set game over view
 	setGameOver:function(isGameOver){
 		gameOver.style.display = isGameOver?'block':'none';
+	},
+	// Set pause indicator visibility
+	setPause:function(isPaused){
+		pauseIndicator.style.display = isPaused ? 'flex' : 'none';
 	}
 };
 

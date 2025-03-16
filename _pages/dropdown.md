@@ -11,9 +11,9 @@ children:
   - title: Weather
     permalink: /weather/
   - title: divider
-  - title: Tetris
-    permalink: /tetris/index.html
-  - title: divider
-  - title: Arabic Keyboard
-    permalink: /arabic-keyboard
+  # - title: Tetris
+  #   permalink: /tetris/index.html
+  # - title: divider
+  # - title: Arabic Keyboard
+  #   permalink: /arabic-keyboard
 ---

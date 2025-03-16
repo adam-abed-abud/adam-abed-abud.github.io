@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="HTML5 Tetris game built with pure JavaScript and Canvas">
+	<title>Tetris</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>HTML5 Tetris</h1>
+        <p>A pure JavaScript and HTML5 Canvas implementation</p>
+        <p class="source-link">
+            <a href="https://github.com/sandywalker/Tetris" target="_blank" rel="noopener noreferrer" class="github-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Source code on GitHub
+            </a>
+        </p>
+    </header>
+
+    <div id="tetris">
+        <canvas id="scene"></canvas>
+        <div id="gameOver">
+            <h1>Game Over!</h1>
+            <h3>Score: <span id="finalScore">0</span></h3>
+            <h2><a href="#" id="restart">Restart</a></h2>
+        </div>
+        <div id="side">
+            <div id="info">
+                <h1 id="levelInfo">Level: <br><span id="level">1</span></h1>
+                <h2 id="scoreInfo">Score: <br><span id="score">0</span></h2>
+                <div id="rewardInfo" class="invisible">+<span id="reward">0</span></div>
+                <canvas id="preview"></canvas>
+                <div id="controls" class="desktop-only">
+                    <p>Controls:</p>
+                    <ul>
+                        <li>← → : Move</li>
+                        <li>↑ : Rotate</li>
+                        <li>↓ : Soft Drop</li>
+                        <li>Space : Hard Drop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="touch-controls" class="mobile-only">
+        <button id="btn-left">←</button>
+        <button id="btn-rotate">↑</button>
+        <button id="btn-right">→</button>
+        <button id="btn-down">↓</button>
+        <button id="btn-drop">Drop</button>
+        <button id="btn-pause">Pause</button>
+    </div>
+</div>
+
+<footer>
+    <p>© 2023 - HTML5 Tetris - <a href="https://github.com/sandywalker/Tetris" target="_blank" rel="noopener noreferrer">View on GitHub <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></p>
+</footer>
+
+<script src="dist/tetris.js"></script>
+<script>
+	(function(){
+		var tetris = new Tetris('tetris');
+		tetris.start();
+		
+		// Mobile touch controls
+		if ('ontouchstart' in window) {
+			document.getElementById('touch-controls').style.display = 'flex';
+			
+			document.getElementById('btn-left').addEventListener('click', function() {
+				tetris._keydownHandler({ keyCode: 37 });
+			});
+			
+			document.getElementById('btn-rotate').addEventListener('click', function() {
+				tetris._keydownHandler({ keyCode: 38 });
+			});
+			
+			document.getElementById('btn-right').addEventListener('click', function() {
+				tetris._keydownHandler({ keyCode: 39 });
+			});
+			
+			document.getElementById('btn-down').addEventListener('click', function() {
+				tetris._keydownHandler({ keyCode: 40 });
+			});
+			
+			document.getElementById('btn-drop').addEventListener('click', function() {
+				tetris._keydownHandler({ keyCode: 32 });
+			});
+			
+			document.getElementById('btn-pause').addEventListener('click', function() {
+				tetris._keydownHandler({ keyCode: 80 });
+				this.textContent = tetris.running ? 'Pause' : 'Resume';
+			});
+		}
+	})();
+</script>
+</body>
+</html>

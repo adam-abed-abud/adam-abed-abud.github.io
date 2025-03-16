@@ -182,10 +182,23 @@ Tetris.prototype = {
 		this.running = false;
 		this.currentTime = new Date().getTime();
 		this.prevTime = this.currentTime;
+		views.setPause(true);
 	},
 	//Game over
-	gamveOver:function(){
-
+	gameOver:function(){
+		this.isGameOver = true;
+		views.setGameOver(this.isGameOver);
+		this.running = false;
+	},
+	// Pause/Resume game with a single toggle function
+	togglePause:function(){
+		if (this.running) {
+			this.pause();
+		} else if (!this.isGameOver) {
+			this.start();
+			views.setPause(false);
+		}
+		return this.running;
 	},
 	// All key event handlers
 	_keydownHandler:function(e){
@@ -195,6 +208,13 @@ Tetris.prototype = {
 		if(!e) { 
 			var e = window.event;
 		}
+		
+		// Handle pause with 'p' key
+		if (e.keyCode === 80) { // 'p' key
+			this.togglePause();
+			return;
+		}
+		
 		if (this.isGameOver||!this.shape){
 			return;
 		}
