@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Time Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="app-title">
+            <h1>Fancy Time Tools</h1>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="stopwatch">
+                <i class="fas fa-stopwatch"></i> Stopwatch
+            </button>
+            <button class="tab-btn" data-tab="timer">
+                <i class="fas fa-hourglass-half"></i> Timer
+            </button>
+            <button class="tab-btn" data-tab="alarm">
+                <i class="fas fa-bell"></i> Alarm
+            </button>
+        </div>
+        
+        <div class="tab-content">
+            <!-- Stopwatch Section -->
+            <div class="tab-pane active" id="stopwatch">
+                <div class="time-display">
+                    <span id="stopwatch-hours">00</span>:<span id="stopwatch-minutes">00</span>:<span id="stopwatch-seconds">00</span>.<span id="stopwatch-milliseconds">00</span>
+                </div>
+                <div class="controls">
+                    <button id="stopwatch-start" class="btn primary">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button id="stopwatch-pause" class="btn secondary" disabled>
+                        <i class="fas fa-pause"></i> Pause
+                    </button>
+                    <button id="stopwatch-reset" class="btn danger" disabled>
+                        <i class="fas fa-undo"></i> Reset
+                    </button>
+                    <button id="stopwatch-lap" class="btn info" disabled>
+                        <i class="fas fa-flag"></i> Lap
+                    </button>
+                </div>
+                <div class="laps-container">
+                    <h3>Laps</h3>
+                    <ul id="laps-list" class="laps-list"></ul>
+                </div>
+            </div>
+            
+            <!-- Timer Section -->
+            <div class="tab-pane" id="timer">
+                <div class="timer-setup">
+                    <div class="time-input">
+                        <div class="input-group">
+                            <input type="number" id="timer-hours" min="0" max="99" value="0">
+                            <label>Hours</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="number" id="timer-minutes" min="0" max="59" value="0">
+                            <label>Minutes</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="number" id="timer-seconds" min="0" max="59" value="0">
+                            <label>Seconds</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-display">
+                    <span id="timer-display-hours">00</span>:<span id="timer-display-minutes">00</span>:<span id="timer-display-seconds">00</span>
+                </div>
+                <div class="progress-container">
+                    <div id="timer-progress" class="progress-bar"></div>
+                </div>
+                <div class="controls">
+                    <button id="timer-start" class="btn primary">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button id="timer-pause" class="btn secondary" disabled>
+                        <i class="fas fa-pause"></i> Pause
+                    </button>
+                    <button id="timer-reset" class="btn danger" disabled>
+                        <i class="fas fa-undo"></i> Reset
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Alarm Section -->
+            <div class="tab-pane" id="alarm">
+                <div class="alarm-setup">
+                    <div class="time-input">
+                        <div class="input-group">
+                            <input type="number" id="alarm-hours" min="0" max="23" value="0">
+                            <label>Hours</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="number" id="alarm-minutes" min="0" max="59" value="0">
+                            <label>Minutes</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="alarm-name">
+                    <input type="text" id="alarm-name" placeholder="Alarm Name">
+                </div>
+                <div class="controls">
+                    <button id="alarm-set" class="btn primary">
+                        <i class="fas fa-plus"></i> Set Alarm
+                    </button>
+                </div>
+                <div class="alarms-container">
+                    <h3>Alarms</h3>
+                    <ul id="alarms-list" class="alarms-list"></ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="current-time">
+            <div class="digital-clock">
+                <span id="current-time">00:00:00</span>
+                <span id="current-date">Monday, January 1, 2023</span>
+                <span id="current-timezone">UTC</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="alarm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-bell"></i> Alarm!</h2>
+            </div>
+            <div class="modal-body">
+                <p id="alarm-message">Your alarm is ringing!</p>
+            </div>
+            <div class="modal-footer">
+                <button id="stop-alarm" class="btn danger">
+                    <i class="fas fa-stop"></i> Stop
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
