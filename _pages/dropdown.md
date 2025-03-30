@@ -10,7 +10,7 @@ children:
   - title: divider
   - title: Weather
     permalink: /weather/
-  - title: divider
+  # - title: divider
   # - title: Tetris
   #   permalink: /tetris/index.html
   # - title: divider

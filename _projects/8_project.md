@@ -36,7 +36,7 @@ I like Monte Carlo methods because it allow us to simulate thousands of possible
 
 The implementation uses several Python libraries including pandas for data manipulation, yfinance for stock data retrieval, and matplotlib for visualization. Here's how it works:
 
-0. Download the historical gold data of 1 oz 
+### Download the historical gold data of 1 oz 
 
 ```python
 # Download data
@@ -69,7 +69,7 @@ This will yield the following:
 The last value as of March 28th is `3060` USD. 
 
 
-1. Monte Carlo (MC) simulation
+### Monte Carlo (MC) simulation
 
 Here comes the fun part. The MC simulation consists in simulating different outcomes for the price variation. We do 1000 simulations. For that we take the standard deviation of the historical data for the last 5 years (maybe not the best estimator?) and then we use it to get an estimation of the forecasted percentage change of price by taking a random number (normal distribution with the same std of the real std of the historical data).This is based on the assumption that stock returns follow a random walk. 
 
@@ -97,7 +97,7 @@ for x in range(num_simulations):
 ```
 
 
-2. Results of the simulation
+### Results of the simulation
 
 Here are the results of the simulation
 
@@ -118,7 +118,7 @@ It is alsom more interesting to see them as a function of the top and bottom qua
     </div>
 </div>
 
-3. Monte Carlo Simulation with Student's t-Distribution
+### Monte Carlo Simulation with Student's t-Distribution
 
 While the normal distribution is commonly used, it often underestimates the probability of extreme events (fat tails) in financial markets. The Student's t-distribution can better capture these tail risks. First, let's fit a t-distribution to our historical returns:
 
@@ -164,7 +164,6 @@ for x in range(num_simulations):
         price_series.append(price)
     simulation_student_t[x] = price_series
 ```
-
 
 And here are the results: 
 
