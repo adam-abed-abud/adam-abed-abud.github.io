@@ -6,8 +6,11 @@ nav_order: 8
 dropdown: true
 children:
   - title: Pointers
-    permalink: /pointers/
+    permalink: /pointers/    
   - title: divider
+  - title: Resources
+    permalink: /links/
+  - title: divider    
   - title: Weather
     permalink: /weather/
   # - title: divider
