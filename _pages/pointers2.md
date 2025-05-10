@@ -4,7 +4,7 @@ title: Pointers
 permalink: /pointers/
 ---
 
-### Here is a collection of cool/useful pointers!
+### Here is a curated collection of cool/useful pointers!
 
 - **Research**
   - [Latest physics news from Nature](https://www.nature.com/subjects/physics)
@@ -34,6 +34,12 @@ permalink: /pointers/
   - [CPU, memory and graphics benchmarks](https://www.cpubenchmark.net/)
   - [App creator: Dream it, code it](https://cerebrascoder.com/)
 
+- **Weekly blogs**
+  - [Netflix Tech Blog](https://netflixtechblog.com/)
+  - [Low Latecny Trading Insights](https://lucisqr.substack.com/)
+  - [Byte Sized Design](https://bytesizeddesign.substack.com/)
+  - [Refactoring Essays](https://refactoring.fm/)
+
 - **Image Signal Processing**
   - [NIST resources for Image & Signal Processing](https://www.nist.gov/image-signal-processing)
   - [ISP Guide](https://github.com/mikeroyal/ISP-Guide)
@@ -57,6 +63,7 @@ permalink: /pointers/
   - [PDF tools](https://www.pdfescape.com/)
   - [PDF Manipulator](https://www.pdfescape.com/online-pdf-editor/)
   - [PaintJS](https://jspaint.app)
+  - [Download PDFs fore free](https://www.pdfdrive.com/)
 
 - **Personal**
   - [Ztype Game](https://zty.pe/)

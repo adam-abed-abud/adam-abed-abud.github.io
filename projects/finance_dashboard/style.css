@@ -7,18 +7,18 @@
 
 :root {
     --primary-color: #ffffff;
-    --secondary-color: #3a86ff;
+    --secondary-color: #4a5df8;
     --accent-color: #ff6b6b;
     --bitcoin-color: #f7931a;
     --forex-color: #2ecc71;
     --gold-color: #f1c40f;
-    --sp500-color: #3498db;
+    --sp500-color: #4a5df8;
     --light-color: #ffffff;
     --text-color: #333333;
     --card-bg: #ffffff;
     --bg-color: #f8f9fa;
     --text-shadow: none;
-    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --box-shadow: 0 5px 15px rgba(74, 93, 250, 1);
     --transition-speed: 0.3s;
 }
 
