@@ -39,6 +39,7 @@ permalink: /pointers/
   - [Low Latecny Trading Insights](https://lucisqr.substack.com/)
   - [Byte Sized Design](https://bytesizeddesign.substack.com/)
   - [Refactoring Essays](https://refactoring.fm/)
+  - [Uber Engineering](https://www.uber.com/en-IN/blog/engineering/)
 
 - **Image Signal Processing**
   - [NIST resources for Image & Signal Processing](https://www.nist.gov/image-signal-processing)
@@ -73,8 +74,10 @@ permalink: /pointers/
   - [Watch documentaries for free](https://topdocumentaryfilms.com/)
   - [TED Talks](https://www.ted.com/)
 
-- **Biohacking**
+- **Health - Biohacking - Longevity**
   - [Muscle Wiki](https://musclewiki.com/)
+  - [Dan Go - high performance Coach](https://www.dango.co/)
+  - [Your Local Epidemiologist](https://yourlocalepidemiologist.substack.com/)
 
 - **Others**
   - [Quote of the Day](https://uplift.vercel.app/)
