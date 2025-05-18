@@ -33,6 +33,7 @@ permalink: /pointers/
   - [IP Information](https://ipleak.net)
   - [CPU, memory and graphics benchmarks](https://www.cpubenchmark.net/)
   - [App creator: Dream it, code it](https://cerebrascoder.com/)
+  - [Roadmap for learning any CS topic](https://roadmap.sh/)
 
 - **Weekly blogs**
   - [Netflix Tech Blog](https://netflixtechblog.com/)
