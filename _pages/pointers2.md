@@ -50,7 +50,7 @@ permalink: /pointers/
   - [Storage Swiss](https://storageswiss.com/)
   - [Blocks and Files](https://blocksandfiles.com/)
   - [The SSD Guy](https://thessdguy.com/)
-  - [Disk prices](https://diskprices.com/)
+  - [Disk prices](https://diskprices.com/) or [Storage Price finder](https://github.com/adam-abed-abud/storage-finder)
 
 - **Image Signal Processing**
   - [NIST resources for Image & Signal Processing](https://www.nist.gov/image-signal-processing)
