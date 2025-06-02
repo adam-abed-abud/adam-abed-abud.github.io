@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.left = '0';
             modal.style.width = '100%';
             modal.style.height = '100%';
-            modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            modal.style.backgroundColor = 'rgba(255,255,255,1)';
             modal.style.display = 'flex';
             modal.style.justifyContent = 'center';
             modal.style.alignItems = 'center';
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Create image element
             const img = document.createElement('img');
             img.src = imgPath;
-            img.style.maxWidth = '90%';
-            img.style.maxHeight = '90%';
+            img.style.maxWidth = '70%';
+            img.style.maxHeight = '70%';
             img.style.objectFit = 'contain';
             
             // Add click handler to close modal
