@@ -76,5 +76,10 @@ layout: default
     {% if site.newsletter.enabled and site.footer_fixed %}
       {% include scripts/newsletter.liquid center=true %}
     {% endif %}
-  </article>
-</div>
+
+    {%- if page.related_publications != null and page.related_publications.size > 0 -%}
+      {% bibliography --cited_in_order %}
+    {%- endif %}
+  </div>
+  <script src="{{ '/assets/js/zoom-links.js' | relative_url }}"></script>
+</article>
