@@ -20,7 +20,13 @@ social: false# includes social icons at the bottom of the page
 
 <p><span class="fa fa-code about-icon"></span> I work in R&D, storage technologies, Software and Algorithm development, image vision, and data processing in mission-critical applications using ML/AI in automotive, earth observation, and life sciences </p>
 
-<p><span class="fa fa-line-chart about-icon"></span> Business mentor supporting growth stategies (B2B, strategy, marketing, branding). Also serve as a startup competition judge, supporting innovation and entrepreneurship in Zurich </p>
+<p><span class="fa fa-line-chart about-icon"></span> Business mentor supporting startups in B2B, strategy, marketing and branding. Startup competition judge in Zurich.  </p>
+
+{% include figure.liquid path="assets/img/singa1.jpg" zoomable=true alt="Startup mentoring session" caption="Mentoring startups in Zurich" %}
+
+{% include figure.liquid path="assets/img/singa2.jpg" zoomable=true alt="Business strategy workshop" caption="Leading a business strategy workshop" %}
+
+{% include figure.liquid path="assets/img/singa3.jpg" zoomable=true alt="Business strategy workshop" caption="Leading a business strategy workshop" %}
 
 <p><span class="fa fa-rocket about-icon"></span> Ex-CERN. Data Acquisition expert. Design, development, and operation of large-scale and high-throughput data filtering systems (~TB/s). Lead developer and maintainer of mission-critical signal-to-noise data software </p>
 
