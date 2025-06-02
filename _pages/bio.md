@@ -8,7 +8,7 @@ nav_order: 1
 
 ## Short bio, tl;dr
 
-You can mostly find me working on storage technologies, C++ development or performance benchmarking of applications
+You can mostly find me working on storage technologies, C++ development, building data platforms or benchmarking high-performance applications.
 
 I like to build, test, and play with the latest technologies. These can range from C++/python libraries, developing home automation applications with Arduino/ESP32 microcontrollers, test linux distros or analyzing large data sets (weather, climate, environment, finance etc.) using (not only) machine learning techniques
 
