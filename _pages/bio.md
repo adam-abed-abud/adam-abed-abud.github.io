@@ -20,6 +20,7 @@ I like to build, test, and play with the latest technologies. These can range fr
 
 I'm a learning enthusiast, I am always looking for the next cool project to work on
 
+I'm passionate about business and entrepeneurship. I served as a startup competititon judge in Zurich and I coach companies in B2B, marketing, branding and growth strategies. 
 
 Some more details on who I am and what I like ...
 <li> I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" /> </li>
