@@ -6,35 +6,55 @@ permalink: /links/
 
 ### More useful pointers!
 
-
 - **Personal**
-  - [Ztype Game](https://zty.pe/)
-  - [Nutrition](https://www.eatthismuch.com)
-  - [The Time Machine](https://wayback-api.archive.org)
-  - [Is It Friday Yet?](https://adam-abed-abud.github.io/isitfridayyet)
-  - [Watch documentaries for free](https://topdocumentaryfilms.com/)
-  - [TED Talks](https://www.ted.com/)
+- [The Time Machine (Internet Archive)](https://wayback-api.archive.org)
+- [Is It Friday Yet?](https://adam-abed-abud.github.io/isitfridayyet)
+- [Watch Documentaries for Free](https://topdocumentaryfilms.com/)
+- [TED Talks](https://www.ted.com/)
+- [Proton Password Generator](https://proton.me/pass/password-generator/)
 
-- **Office Tools**
-  - [PDF tools](https://www.pdfescape.com/)
-  - [PDF Manipulator](https://www.pdfescape.com/online-pdf-editor/)
-  - [PaintJS](https://jspaint.app)
-  - [Download PDFs fore free](https://www.pdfdrive.com/)
+- **🧰 Office Tools**
+- [PDF Tools](https://www.pdfescape.com/)
+- [PDF Manipulator](https://www.pdfescape.com/online-pdf-editor/)
+- [Stirling PDF – All-in-One PDF Toolkit](https://www.stirlingpdf.com/)
+- [Paint in Browser (PaintJS)](https://jspaint.app)
+- [Free PDF Library](https://www.pdfdrive.com/)
 
+- **🧬 Health • Biohacking • Longevity**
+- [Muscle Wiki](https://musclewiki.com/)
+- [Dan Go – High Performance Coach](https://www.dango.co/)
+- [Your Local Epidemiologist (COVID & Public Health)](https://yourlocalepidemiologist.substack.com/)
+- [Nutrition Planner](https://www.eatthismuch.com)
+- [Human Benchmark – Cognition Games](https://humanbenchmark.com/)
+- [Nutrition](https://www.eatthismuch.com)
 
-- **Health - Biohacking - Longevity**
-  - [Muscle Wiki](https://musclewiki.com/)
-  - [Dan Go - high performance Coach](https://www.dango.co/)
-  - [Your Local Epidemiologist](https://yourlocalepidemiologist.substack.com/)
+- **🎨 Design & Creativity**
+- [Cool 3D Image Gallery](https://www.thiings.co/things)
+- [Free PNG Image Library](https://pngimg.com/)
+- [Image Tools & Editors Hub](https://10015.io/)
+- [Magic Eraser – Remove Objects from Images](https://magicstudio.com/magiceraser/)
+- [Image Effects & Filters](https://www.tooooools.app)
+- [Vector Icons and Stickers – Flaticon](https://www.flaticon.com/)
 
-- **Others**
-  - [Quote of the Day](https://uplift.vercel.app/)
-  - [xkcd](https://xkcd.com)
-  - [Proton Password Generator](https://proton.me/pass/password-generator/)
-  - [Maps True Size](https://thetruesize.com/)
-  - [One Minute Physics](https://www.youtube.com/user/minutephysics/)
-  - [Stellarium](https://stellarium-web.org/)
-  - [1000 tools](https://1000.tools/)
-  - [IT tools](https://it-tools.tech/)
-  - [Code Timeline Visualizer](https://codevi.netlify.app/)
-  - [Vector icons and stickers](https://www.flaticon.com/)
+- **🛰️ Maps • Travel • Exploration**
+- [True Size of Countries Map Tool](https://thetruesize.com/)
+- [Travel Animation Generator](https://mult.dev/)
+- [Virtual Travel Experiences](https://virtualvacation.us/)
+- [Stellarium – Online Planetarium](https://stellarium-web.org/)
+- [Global Radio Streaming](http://radiocast.co)
+
+- **Learning • Knowledge**
+- [TED Talks](https://www.ted.com/)
+- [One Minute Physics (YouTube)](https://www.youtube.com/user/minutephysics/)
+- [Cheatography – Cheat Sheets Archive](https://cheatography.com/)
+- [Quote of the Day Generator](https://uplift.vercel.app/)
+- [xkcd Webcomic](https://xkcd.com)
+
+- **🎮 Games**
+- [Typing Games – TypingBird](https://typingbird.com/)
+- [Typing Practice – Keybr](https://www.keybr.com/)
+- [Ztype Game](https://zty.pe/)
+
+- **🛠️ Utilities & Fixes**
+- [Car Repair Tutorials & Tips](https://www.carcarekiosk.com)
+

@@ -60,3 +60,6 @@ permalink: /pointers/
   - [Godbolt](https://godbolt.org/)
   - [Linux OS (Debian based)](Linux)
   - [VIM Editor](https://www.vim.org/)
+  - [Code Timeline Visualizer](https://codevi.netlify.app/)
+  - [IT Tools Collection](https://it-tools.tech/)
+  - [1000 Tools – Curated Utilities](https://1000.tools/)
