@@ -35,6 +35,7 @@ permalink: /links/
 - [Magic Eraser – Remove Objects from Images](https://magicstudio.com/magiceraser/)
 - [Image Effects & Filters](https://www.tooooools.app)
 - [Vector Icons and Stickers – Flaticon](https://www.flaticon.com/)
+- [Virtual whiteboard for sketching](https://excalidraw.com/)
 
 - **🛰️ Maps • Travel • Exploration**
 - [True Size of Countries Map Tool](https://thetruesize.com/)
