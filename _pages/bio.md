@@ -6,11 +6,36 @@ nav: true
 nav_order: 1
 ---
 
+<style>
+.expand-toggle {
+  background: var(--global-theme-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1.5rem 0;
+}
+
+.expand-toggle:hover {
+  opacity: 0.8;
+}
+
+.expanded-content {
+  display: none;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.expanded-content.show {
+  display: block;
+}
+</style>
+
 ## Short bio, tl;dr
 
 You can mostly find me working on storage technologies, C++ development [(free guide)](/assets/pdf/modern_cpp_guide_Adam_Abed_Abud.pdf), building data platforms or benchmarking high-performance applications.
-
-> **Want to know more about me?** Check out my [Personal Profile](/personal-profile/) for a deeper dive into my journey, passions, and what drives me forward! 🚀
 
 I like to build, test, and play with the latest technologies. These can range from C++/python libraries, developing home automation applications with Arduino/ESP32 microcontrollers, test linux distros or analyzing large data sets (weather, climate, environment, finance etc.) using (not only) machine learning techniques
 
@@ -27,6 +52,50 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 Some more details on who I am and what I like ...
 <li> I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" /> </li>
 <li> My interests outside of science and computers include bio-hacking, mixing cusines from different places, and reading about history</li>
+
+<button class="expand-toggle" onclick="toggleExpanded()">
+  Read more about my journey →
+</button>
+
+<div class="expanded-content" id="expandedContent">
+
+## My Journey
+
+**Iraq to Europe**: Born in Iraq <img src="../assets/img/iraq.png" height="20px" />, I pursued my education across Europe, living in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" />. Each country taught me something unique about innovation, culture, and the human spirit.
+
+**CERN Experience**: Worked on cutting-edge data acquisition systems handling terabytes per second. Led development of mission-critical software for particle physics experiments.
+
+**Entrepreneurship**: Transitioned into the startup ecosystem, serving as a competition judge and business mentor. I help companies scale through B2B strategies, marketing, and branding.
+
+## Beyond Work
+
+When I'm not coding or optimizing systems, I'm passionate about:
+
+- **Bio-hacking**: Optimizing human performance through technology, nutrition, and lifestyle design
+- **Culinary Fusion**: Experimenting with cuisines from different cultures I've lived in
+- **History**: Reading about technological revolutions and how societies adapt to change
+- **Hardware Tinkering**: Building home automation systems with Arduino and ESP32
+
+---
+
+*"The intersection of technology and humanity is where the most meaningful innovations emerge."*
+
+</div>
+
+<script>
+function toggleExpanded() {
+  const content = document.getElementById('expandedContent');
+  const button = document.querySelector('.expand-toggle');
+  
+  if (content.classList.contains('show')) {
+    content.classList.remove('show');
+    button.innerHTML = 'Read more about my journey →';
+  } else {
+    content.classList.add('show');
+    button.innerHTML = 'Hide details ↑';
+  }
+}
+</script>
 
 <!-- <img src="img/avatar-icon.png" alt="Avatar" style="float: left; width: 150px; height: 150px; border-radius: 50%; object-fit: cover;"> 
 -->
