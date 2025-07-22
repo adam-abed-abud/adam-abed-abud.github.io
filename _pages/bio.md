@@ -58,6 +58,7 @@ Some more details on who I am and what I like ...
 </button>
 
 <div class="expanded-content" id="expandedContent">
+<div markdown="1">
 
 ## My Journey
 
@@ -80,6 +81,7 @@ When I'm not coding or optimizing systems, I'm passionate about:
 
 *"The intersection of technology and humanity is where the most meaningful innovations emerge."*
 
+</div>
 </div>
 
 <script>
