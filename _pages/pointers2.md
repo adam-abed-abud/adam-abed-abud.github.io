@@ -41,6 +41,7 @@ permalink: /pointers/
   - [Byte Sized Design](https://bytesizeddesign.substack.com/)
   - [Refactoring Essays](https://refactoring.fm/)
   - [Uber Engineering](https://www.uber.com/en-IN/blog/engineering/)
+  - [Engineering Blogs](https://github.com/kilimchoi/engineering-blogs/)
 
 - **Storage Technologies**
   - [Storage endurance calculator](../projects/endurance_calc)

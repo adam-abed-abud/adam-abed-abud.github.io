@@ -51,9 +51,9 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 
 Some more details on who I am and what I like ...
 <li> I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" /> </li>
-<li> My interests outside of science and computers include bio-hacking, mixing cusines from different places, and reading about history</li>
+<li> My interests outside of science and computers include bio-hacking, mixing cusines from different countries, and reading about history</li>
 
-<button class="expand-toggle" onclick="toggleExpanded()">
+<!-- <button class="expand-toggle" onclick="toggleExpanded()">
   Read more about my journey →
 </button>
 
@@ -94,10 +94,10 @@ function toggleExpanded() {
     button.innerHTML = 'Read more about my journey →';
   } else {
     content.classList.add('show');
-    button.innerHTML = 'Hide details ↑';
+    button.innerHTML = 'Less details ↑';
   }
 }
-</script>
+</script> -->
 
 <!-- <img src="img/avatar-icon.png" alt="Avatar" style="float: left; width: 150px; height: 150px; border-radius: 50%; object-fit: cover;"> 
 -->
