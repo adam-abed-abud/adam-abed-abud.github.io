@@ -49,11 +49,11 @@ I'm a learning enthusiast, I am always looking for the next cool project to work
 
 I'm passionate about business and entrepeneurship. I served as a startup competititon judge in Zurich and I coach companies in B2B, marketing, branding and growth strategies. 
 
-Some more details on who I am and what I like ...
+<!-- Some more details on who I am and what I like ...
 <li> I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" /> </li>
-<li> My interests outside of science and computers include bio-hacking, mixing cusines from different countries, and reading about history</li>
+<li> My interests outside of science and computers include bio-hacking, mixing cusines from different countries, and reading about history</li> -->
 
-<!-- <button class="expand-toggle" onclick="toggleExpanded()">
+<button class="expand-toggle" onclick="toggleExpanded()">
   Read more about my journey →
 </button>
 
@@ -62,24 +62,33 @@ Some more details on who I am and what I like ...
 
 ## My Journey
 
-**Iraq to Europe**: Born in Iraq <img src="../assets/img/iraq.png" height="20px" />, I pursued my education across Europe, living in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" />. Each country taught me something unique about innovation, culture, and the human spirit.
-
-**CERN Experience**: Worked on cutting-edge data acquisition systems handling terabytes per second. Led development of mission-critical software for particle physics experiments.
-
-**Entrepreneurship**: Transitioned into the startup ecosystem, serving as a competition judge and business mentor. I help companies scale through B2B strategies, marketing, and branding.
+Some more details on who I am and what I like ...
+<li> I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" /> </li>
 
 ## Beyond Work
 
 When I'm not coding or optimizing systems, I'm passionate about:
 
-- **Bio-hacking**: Optimizing human performance through technology, nutrition, and lifestyle design
-- **Culinary Fusion**: Experimenting with cuisines from different cultures I've lived in
-- **History**: Reading about technological revolutions and how societies adapt to change
+- **Bio-hacking**: I read about human performance through technology, nutrition, and lifestyle changes
+- **Culinary Fusion**: Experimenting with cuisines from different cultures
+- **History**: Reading about history, culture and traditions of different countries
 - **Hardware Tinkering**: Building home automation systems with Arduino and ESP32
+
+Some more facts about thinks I like (in no particular order): 
+- Enjoy picnics 
+- Particularly enjoy teaching
+- Like One Piece and it’s misteries 
+- Enjoy reading 
+- Iron man and Batman are my favorite superheroes 
+- Rarely watch tv shows
+- Like technology 
+- Enjoy hummus
+- Like robots
+- Started making kombucha and fermenting food at home
+- Many more things .... 
 
 ---
 
-*"The intersection of technology and humanity is where the most meaningful innovations emerge."*
 
 </div>
 </div>
@@ -105,5 +114,3 @@ function toggleExpanded() {
 <!--  I specialize in <a href="https://github.com/DUNE-DAQ/">Data Acquisition Systems</a> at <a href="https://home.cern/">CERN</a>, mainly focusing on software development and optimization of data intensive applications.</p> -->
 
 
-<!--
--->
