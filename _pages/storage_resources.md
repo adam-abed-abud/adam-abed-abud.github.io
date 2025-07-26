@@ -4,8 +4,6 @@ title: Storage Resources
 permalink: /storage/
 ---
 
-### Storage Technologies
-
 Storage is the modern equivalent of paper. It is a fundamental part of computing systems. Here is a curated list of resources for understanding, using and improving storage technologies:
 
 - **Storage Tools**
