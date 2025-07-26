@@ -24,7 +24,7 @@ social: false# includes social icons at the bottom of the page
 
 <p><span class="fa fa-rocket about-icon"></span> Ex-CERN. Data Acquisition expert. Design, development, and operation of large-scale and high-throughput data filtering systems (~TB/s). Lead developer and maintainer of mission-critical signal-to-noise data software </p>
 
-<p><span class="fa fa-university about-icon"></span> [PhD in Applied Physics](https://livrepository.liverpool.ac.uk/3166725/1/201451432_Jul2022.pdf) specializing in computer engineering and data storage technologies. MSc in Nuclear and Particle Physics </p>
+<p><span class="fa fa-university about-icon"></span><a href="https://livrepository.liverpool.ac.uk/3166725/1/201451432_Jul2022.pdf/">PhD in Applied Physics</a> specializing in computer engineering and data storage technologies. MSc in Nuclear and Particle Physics </p>
 
 
 ---
