@@ -11,6 +11,9 @@ children:
   - title: Resources
     permalink: /links/
   - title: divider    
+  - title: Storage Resources
+    permalink: /storage/
+  - title: divider
   - title: Weather
     permalink: /weather/
   # - title: divider

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Storage Technology Pyramid</title>
+  <style>
+    :root {
+      --bg: #f0f4fb;
+      --text: #1e293b;
+      --arrow-start: #2563eb;
+      --arrow-end: #93c5fd;
+      --tier5-start: #0d47a1; --tier5-end: #1976d2;
+      --tier4-start: #1565c0; --tier4-end: #1e88e5;
+      --tier3-start: #1976d2; --tier3-end: #2196f3;
+      --tier2-start: #42a5f5; --tier2-end: #64b5f6;
+      --tier1-start: #90caf9; --tier1-end: #bbdefb;
+      --shadow: rgba(0, 0, 0, 0.15);
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    h1 {
+      color: var(--tier5-start);
+      margin-bottom: 0.25rem;
+    }
+    p { margin-bottom: 1.5rem; color: #475569; }
+
+    .pyramid {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      position: relative;
+      width: 300px;
+    }
+    .layer {
+      position: relative;
+      width: 100%;
+      height: 60px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px var(--shadow);
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .layer:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 8px 20px var(--shadow);
+      z-index: 5;
+    }
+
+    /* Tier widths and gradients */
+    .layer[data-tier="5"] { 
+      width: 100%; 
+      background: linear-gradient(135deg, var(--tier5-start), var(--tier5-end));
+    }
+    .layer[data-tier="4"] { 
+      width: 80%; 
+      background: linear-gradient(135deg, var(--tier4-start), var(--tier4-end));
+    }
+    .layer[data-tier="3"] { 
+      width: 60%; 
+      background: linear-gradient(135deg, var(--tier3-start), var(--tier3-end));
+    }
+    .layer[data-tier="2"] { 
+      width: 40%; 
+      background: linear-gradient(135deg, var(--tier2-start), var(--tier2-end));
+    }
+    .layer[data-tier="1"] { 
+      width: 20%; 
+      background: linear-gradient(135deg, var(--tier1-start), var(--tier1-end));
+    }
+
+    .tooltip {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      background: white;
+      padding: 0.75rem;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px var(--shadow);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      z-index: 20;
+      width: 180px;
+      text-align: left;
+      font-size: 0.875rem;
+      line-height: 1.3;
+      color: var(--text);
+    }
+    .tooltip::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: white;
+    }
+    .layer:hover .tooltip {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      pointer-events: auto;
+    }
+    .tooltip h4 {
+      margin-bottom: 0.5em;
+      color: var(--arrow-start);
+      font-size: 1rem;
+    }
+
+    /* ── BANDWIDTH ARROW ── */
+    .arrow-container {
+      position: relative;
+      width: 16px;
+      height: calc(60px*5 + 4*8px);
+      margin-bottom: 8px;
+    }
+    .arrow-bar {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, var(--arrow-start), var(--arrow-end));
+      border-radius: 8px;
+    }
+    .arrow-label {
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--arrow-start);
+    }
+
+    /* ── LATENCY ARROW ── */
+    .latency-arrow-container {
+      position: relative;
+      width: 16px;
+      height: calc(60px*5 + 4*8px);
+      margin-bottom: 8px;
+    }
+    .latency-arrow-bar {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, var(--arrow-end), var(--arrow-start));
+      border-radius: 8px;
+    }
+    .latency-arrow-label {
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--arrow-start);
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-end;
+      gap: 4rem;
+    }
+    
+    .arrows-group {
+      display: flex;
+      gap: 4.5rem;
+      margin-right: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Latency &amp; Bandwidth</h1>
+  <p>(Hover each layer)</p>
+
+  <div class="container">
+    <div class="arrows-group">
+      <!-- bandwidth arrow -->
+      <div class="arrow-container">
+        <div class="arrow-bar"></div>
+        <div class="arrow-label">Bandwidth</div>
+      </div>
+
+      <!-- latency arrow -->
+      <div class="latency-arrow-container">
+        <div class="latency-arrow-bar"></div>
+        <div class="latency-arrow-label">Latency</div>
+      </div>
+    </div>
+
+    <div class="pyramid">
+    <div class="layer" data-tier="5">
+      HDD
+      <div class="tooltip">
+        <h4>HDD</h4>
+        Bandwidth: 100 MB/s<br>
+        Latency: 10 ms
+      </div>
+    </div>
+    <div class="layer" data-tier="4">
+      SSD
+      <div class="tooltip">
+        <h4>SSD</h4>
+        Bandwidth: 500 MB/s<br>
+        Latency: 100 µs
+      </div>
+    </div>
+    <div class="layer" data-tier="3">
+      NVMe SSD
+      <div class="tooltip">
+        <h4>NVMe SSD</h4>
+        Bandwidth: 2 GB/s<br>
+        Latency: 30 µs
+      </div>
+    </div>
+    <div class="layer" data-tier="2">
+      NVM
+      <div class="tooltip">
+        <h4>NVM</h4>
+        Bandwidth: 10 GB/s<br>
+        Latency: 1 µs
+      </div>
+    </div>
+    <div class="layer" data-tier="1">
+      DRAM
+      <div class="tooltip">
+        <h4>DRAM</h4>
+        Bandwidth: 30 GB/s<br>
+        Latency: 0.1 µs
+      </div>
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

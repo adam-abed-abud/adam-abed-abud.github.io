@@ -43,16 +43,6 @@ permalink: /pointers/
   - [Uber Engineering](https://www.uber.com/en-IN/blog/engineering/)
   - [Engineering Blogs](https://github.com/kilimchoi/engineering-blogs/)
 
-- **Storage Technologies**
-  - [Storage endurance calculator](../projects/endurance_calc)
-  - [EC2 Instances pricing comparison](../projects/ec2_instance)
-  - [Storage Review](https://www.storagereview.com/)
-  - [Search Storage](https://searchstorage.techtarget.com/)
-  - [Storage Swiss](https://storageswiss.com/)
-  - [Blocks and Files](https://blocksandfiles.com/)
-  - [The SSD Guy](https://thessdguy.com/)
-  - [Disk prices](https://diskprices.com/) or [Storage Price finder](https://github.com/adam-abed-abud/storage-finder)
-
 - **Image Signal Processing**
   - [NIST resources for Image & Signal Processing](https://www.nist.gov/image-signal-processing)
   - [ISP Guide](https://github.com/mikeroyal/ISP-Guide)

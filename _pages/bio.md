@@ -60,19 +60,16 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 <div class="expanded-content" id="expandedContent">
 <div markdown="1">
 
-## My Journey
-
 Some more details on who I am and what I like ...
-<li> I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" /> </li>
+I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" />
 
-## Beyond Work
 
 When I'm not coding or optimizing systems, I'm passionate about:
 
 - **Bio-hacking**: I read about human performance through technology, nutrition, and lifestyle changes
-- **Culinary Fusion**: Experimenting with cuisines from different cultures
+- **Kitchen Fusion**: Experimenting with cuisines from different cultures
 - **History**: Reading about history, culture and traditions of different countries
-- **Hardware Tinkering**: Building home automation systems with Arduino and ESP32
+- **Hardware Tinkering**: Building home automation systems with Arduino and ESP32, weather stations, RC cars, and more! 
 
 Some more facts about thinks I like (in no particular order): 
 - Enjoy picnics 
@@ -106,7 +103,7 @@ function toggleExpanded() {
     button.innerHTML = 'Less details ↑';
   }
 }
-</script> -->
+</script>
 
 <!-- <img src="img/avatar-icon.png" alt="Avatar" style="float: left; width: 150px; height: 150px; border-radius: 50%; object-fit: cover;"> 
 -->
