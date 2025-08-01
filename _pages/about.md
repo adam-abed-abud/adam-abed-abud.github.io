@@ -18,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false# includes social icons at the bottom of the page
 ---
 
-<p><span class="fa fa-code about-icon"></span> I work in R&D, ML/AI, storage technologies, Software and Algorithm development, image vision, and data processing in mission-critical applications using in automotive, earth observation, and life sciences </p>
+<p><span class="fa fa-code about-icon"></span> I work in R&D, ML/AI, storage technologies, Software and Algorithm development, image vision, and data processing in mission-critical applications in automotive, earth observation, and life science industries</p>
 
 <span class="fa fa-line-chart about-icon"></span> Business mentor supporting startups in B2B, strategy, marketing and branding. [Startup](javascript:void(0)){: .figure-link data-zoomable-image="assets/img/singa1.jpg"} [competition](javascript:void(0)){: .figure-link data-zoomable-image="assets/img/singa2.jpg"} [judge](javascript:void(0)){: .figure-link data-zoomable-image="assets/img/singa3.jpg"} in Zurich.
 
