@@ -32,6 +32,7 @@ permalink: /links/
 - [Cool 3D Image Gallery](https://www.thiings.co/things)
 - [Free PNG Image Library](https://pngimg.com/)
 - [Image Tools & Editors Hub](https://10015.io/)
+- [Image editing tools](https://remove.photos/)
 - [Magic Eraser – Remove Objects from Images](https://magicstudio.com/magiceraser/)
 - [Image Effects & Filters](https://www.tooooools.app)
 - [Vector Icons and Stickers – Flaticon](https://www.flaticon.com/)
@@ -55,6 +56,9 @@ permalink: /links/
 - [Typing Games – TypingBird](https://typingbird.com/)
 - [Typing Practice – Keybr](https://www.keybr.com/)
 - [Ztype Game](https://zty.pe/)
+- [Party Game](https://www.airconsole.com/)
+- [Car simulator](https://slowroads.io/)
+- [Drive and Travel](https://drivenlisten.com/)
 
 - **🛠️ Utilities & Fixes**
 - [Car Repair Tutorials & Tips](https://www.carcarekiosk.com)
