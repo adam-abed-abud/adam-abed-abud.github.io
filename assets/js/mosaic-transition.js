@@ -103,10 +103,12 @@ class MosaicTransition {
     // Wait for covering animation to complete
     await new Promise(r => setTimeout(r, this.DURATION + maxDelay + 30));
 
+    // Store state in sessionStorage to indicate we're coming from a transition
+    sessionStorage.setItem('mosaic-transitioning', 'true');
+    sessionStorage.setItem('mosaic-timestamp', Date.now().toString());
+
     // Navigate to new page
     window.location.href = targetUrl;
-
-    // Note: The revealing animation will happen on the new page
   }
 
   async performReveal() {
@@ -268,14 +270,31 @@ document.addEventListener('DOMContentLoaded', () => {
     attributeFilter: ['data-theme', 'class']
   });
   
-  // Perform reveal animation on page load (unless it's a direct page load)
-  if (document.referrer && document.referrer.includes(window.location.hostname)) {
-    // Small delay to ensure everything is loaded
+  // Check if we're coming from a mosaic transition
+  const isTransitioning = sessionStorage.getItem('mosaic-transitioning') === 'true';
+  const transitionTimestamp = parseInt(sessionStorage.getItem('mosaic-timestamp') || '0');
+  const timeSinceTransition = Date.now() - transitionTimestamp;
+  
+  // Clear the transition state
+  sessionStorage.removeItem('mosaic-transitioning');
+  sessionStorage.removeItem('mosaic-timestamp');
+  
+  if (isTransitioning && timeSinceTransition < 5000) {
+    // We're coming from a transition, start with covering state and then reveal
+    window.mosaicTransition.overlay.classList.add('covering');
+    window.mosaicTransition.chooseActiveTiles();
+    
+    // Small delay to ensure everything is loaded, then reveal
+    setTimeout(() => {
+      window.mosaicTransition.performReveal();
+    }, 100);
+  } else if (document.referrer && document.referrer.includes(window.location.hostname)) {
+    // Regular navigation from same site, perform reveal
     setTimeout(() => {
       window.mosaicTransition.performReveal();
     }, 100);
   } else {
-    // For direct page loads, ensure the overlay is hidden
+    // Direct page load, ensure the overlay is hidden
     setTimeout(() => {
       window.mosaicTransition.forceCleanup();
     }, 100);
