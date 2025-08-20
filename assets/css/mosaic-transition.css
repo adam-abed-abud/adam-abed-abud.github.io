@@ -3,7 +3,7 @@
   --mosaic-cols: 12;
   --mosaic-duration: 700ms;
   --mosaic-gap: 2px;
-  --mosaic-cover-color: #0b0d13;
+  --mosaic-cover-color: #4a5df8;
   --mosaic-easing: cubic-bezier(.16,1,.3,1);
   --mosaic-cover-percentage: 0.7;
   --mosaic-enabled: 1; /* Set to 0 to disable */

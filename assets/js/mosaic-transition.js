@@ -172,15 +172,24 @@ class MosaicTransition {
   }
 
   updateTheme() {
-    // Update the cover color based on current theme
+    // Only update theme if user hasn't set a custom color
+    // This allows CSS to control the color while still supporting theme switching
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark' || 
                    document.documentElement.classList.contains('dark');
     
-    if (isDark) {
-      document.documentElement.style.setProperty('--mosaic-cover-color', '#0b0d13');
-    } else {
-      document.documentElement.style.setProperty('--mosaic-cover-color', '#ffffff');
+    // Check if user has set a custom color in CSS
+    const computedColor = getComputedStyle(document.documentElement).getPropertyValue('--mosaic-cover-color').trim();
+    const defaultColors = ['#0b0d13', '#ffffff', '#4a5df8'];
+    
+    // Only override if the current color is one of the default theme colors
+    if (defaultColors.includes(computedColor)) {
+      if (isDark) {
+        document.documentElement.style.setProperty('--mosaic-cover-color', '#0b0d13');
+      } else {
+        document.documentElement.style.setProperty('--mosaic-cover-color', '#4a5df8');
+      }
     }
+    // If user has set a custom color, don't override it
   }
 
   interceptNavigation() {
