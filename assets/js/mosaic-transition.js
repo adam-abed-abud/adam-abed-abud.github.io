@@ -67,16 +67,17 @@ class MosaicTransition {
       t.style.transitionDelay = Math.round(Math.random() * maxDelayRange) + 'ms';
     });
 
-    // Number of tiles to cover this run (at least 1 to avoid empty set)
-    const k = Math.max(1, Math.round(this.COVER_PERCENTAGE * this.tiles.length));
+    // For full-screen coverage, activate all tiles
+    const k = this.tiles.length;
 
-    // Fisher–Yates shuffle indices, then take first k
+    // Fisher–Yates shuffle indices for random animation order
     const idx = [...this.tiles.keys()];
     for (let i = idx.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [idx[i], idx[j]] = [idx[j], idx[i]];
     }
     
+    // Activate all tiles for complete screen coverage
     for (let i = 0; i < k; i++) {
       this.tiles[idx[i]].classList.add('active');
     }
