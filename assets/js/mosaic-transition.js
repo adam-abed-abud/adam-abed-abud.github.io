@@ -225,6 +225,12 @@ class MosaicTransition {
         return;
       }
 
+      // Skip if it's a figure link (for image zooming)
+      if (link.classList.contains('figure-link') || 
+          link.hasAttribute('data-zoomable-image')) {
+        return;
+      }
+
       e.preventDefault();
       this.performTransition(href);
     });
