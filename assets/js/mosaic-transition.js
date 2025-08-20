@@ -30,6 +30,9 @@ class MosaicTransition {
     
     // Intercept navigation
     this.interceptNavigation();
+    
+    // Ensure cleanup on page unload
+    this.setupCleanup();
   }
 
   createOverlay() {
@@ -122,6 +125,52 @@ class MosaicTransition {
     this.isTransitioning = false;
   }
 
+  // New method to force cleanup of the overlay
+  forceCleanup() {
+    if (this.overlay) {
+      this.overlay.classList.remove('covering', 'revealing');
+      this.overlay.classList.add('force-cleanup');
+      this.isTransitioning = false;
+      // Clear all active tiles
+      this.tiles.forEach(t => {
+        t.classList.remove('active');
+        t.style.transitionDelay = '';
+      });
+      
+      // Remove the force-cleanup class after a short delay
+      setTimeout(() => {
+        if (this.overlay) {
+          this.overlay.classList.remove('force-cleanup');
+        }
+      }, 150);
+    }
+  }
+
+  // New method to setup cleanup handlers
+  setupCleanup() {
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', () => {
+      this.forceCleanup();
+    });
+
+    // Cleanup on page visibility change (for mobile browsers)
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden') {
+        this.forceCleanup();
+      }
+    });
+
+    // Cleanup on page focus (handles cases where page is loaded from cache)
+    window.addEventListener('focus', () => {
+      // Small delay to ensure page is fully loaded
+      setTimeout(() => {
+        if (!this.isTransitioning && this.overlay.classList.contains('covering')) {
+          this.forceCleanup();
+        }
+      }, 100);
+    });
+  }
+
   updateTheme() {
     // Update the cover color based on current theme
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark' || 
@@ -173,9 +222,15 @@ class MosaicTransition {
 
     // Handle browser back/forward buttons
     window.addEventListener('popstate', () => {
-      if (!this.isTransitioning) {
-        this.performReveal();
-      }
+      // Force cleanup first to ensure we start from a clean state
+      this.forceCleanup();
+      
+      // Small delay to ensure the page is fully loaded
+      setTimeout(() => {
+        if (!this.isTransitioning) {
+          this.performReveal();
+        }
+      }, 50);
     });
   }
 }
@@ -203,5 +258,42 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       window.mosaicTransition.performReveal();
     }, 100);
+  } else {
+    // For direct page loads, ensure the overlay is hidden
+    setTimeout(() => {
+      window.mosaicTransition.forceCleanup();
+    }, 100);
   }
 });
+
+// Additional cleanup on window load to handle any edge cases
+window.addEventListener('load', () => {
+  if (window.mosaicTransition) {
+    // If the overlay is still covering after page load, force cleanup
+    if (window.mosaicTransition.overlay && 
+        window.mosaicTransition.overlay.classList.contains('covering') && 
+        !window.mosaicTransition.isTransitioning) {
+      window.mosaicTransition.forceCleanup();
+    }
+  }
+});
+
+// Fallback cleanup for pages loaded from cache or with timing issues
+window.addEventListener('pageshow', (event) => {
+  // Handle pages loaded from cache (persisted state)
+  if (event.persisted && window.mosaicTransition) {
+    setTimeout(() => {
+      window.mosaicTransition.forceCleanup();
+    }, 50);
+  }
+});
+
+// Additional safety cleanup after a longer delay
+setTimeout(() => {
+  if (window.mosaicTransition && window.mosaicTransition.overlay) {
+    const overlay = window.mosaicTransition.overlay;
+    if (overlay.classList.contains('covering') && !window.mosaicTransition.isTransitioning) {
+      window.mosaicTransition.forceCleanup();
+    }
+  }
+}, 2000);

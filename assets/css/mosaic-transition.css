@@ -15,7 +15,7 @@
 }
 
 [data-theme="light"] {
-  --mosaic-cover-color: #ffffff;
+  --mosaic-cover-color: #4a5df8;
 }
 
 /* Alternative color schemes - uncomment one to use */
@@ -70,6 +70,7 @@
   grid-template-rows: repeat(var(--mosaic-rows), 1fr);
   gap: var(--mosaic-gap);
   opacity: 0;
+  transition: opacity 0.1s ease-out;
 }
 
 .mosaic-tile {
@@ -99,6 +100,24 @@
 .mosaic-transition.revealing .mosaic-tile.active {
   transform: scale(0);
   transition: transform var(--mosaic-duration) var(--mosaic-easing), opacity 0s;
+}
+
+/* Ensure overlay is hidden when not transitioning */
+.mosaic-transition:not(.covering):not(.revealing) {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Force cleanup for any stuck states */
+.mosaic-transition.force-cleanup {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.mosaic-transition.force-cleanup .mosaic-tile {
+  transform: scale(0) !important;
+  opacity: 0 !important;
+  transition: none !important;
 }
 
 /* Responsive adjustments */
