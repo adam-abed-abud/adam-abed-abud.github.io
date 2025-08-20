@@ -179,12 +179,12 @@ class MosaicTransition {
     
     // Check if user has set a custom color in CSS
     const computedColor = getComputedStyle(document.documentElement).getPropertyValue('--mosaic-cover-color').trim();
-    const defaultColors = ['#0b0d13', '#ffffff', '#4a5df8'];
+    const defaultColors = ['#4a5df8', '#4a5df8', '#4a5df8'];
     
     // Only override if the current color is one of the default theme colors
     if (defaultColors.includes(computedColor)) {
       if (isDark) {
-        document.documentElement.style.setProperty('--mosaic-cover-color', '#0b0d13');
+        document.documentElement.style.setProperty('--mosaic-cover-color', '#4a5df7');
       } else {
         document.documentElement.style.setProperty('--mosaic-cover-color', '#4a5df8');
       }
