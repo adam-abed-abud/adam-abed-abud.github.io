@@ -106,6 +106,16 @@ class MosaicTransition {
     // Store state in sessionStorage to indicate we're coming from a transition
     sessionStorage.setItem('mosaic-transitioning', 'true');
     sessionStorage.setItem('mosaic-timestamp', Date.now().toString());
+    sessionStorage.setItem('mosaic-covered', 'true');
+    
+    // Store the active tile indices to recreate the same pattern
+    const activeIndices = [];
+    this.tiles.forEach((tile, index) => {
+      if (tile.classList.contains('active')) {
+        activeIndices.push(index);
+      }
+    });
+    sessionStorage.setItem('mosaic-active-indices', JSON.stringify(activeIndices));
 
     // Navigate to new page
     window.location.href = targetUrl;
@@ -272,17 +282,40 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Check if we're coming from a mosaic transition
   const isTransitioning = sessionStorage.getItem('mosaic-transitioning') === 'true';
+  const isCovered = sessionStorage.getItem('mosaic-covered') === 'true';
   const transitionTimestamp = parseInt(sessionStorage.getItem('mosaic-timestamp') || '0');
   const timeSinceTransition = Date.now() - transitionTimestamp;
   
   // Clear the transition state
   sessionStorage.removeItem('mosaic-transitioning');
   sessionStorage.removeItem('mosaic-timestamp');
+  sessionStorage.removeItem('mosaic-covered');
   
-  if (isTransitioning && timeSinceTransition < 5000) {
+  if (isTransitioning && isCovered && timeSinceTransition < 5000) {
     // We're coming from a transition, start with covering state and then reveal
     window.mosaicTransition.overlay.classList.add('covering');
-    window.mosaicTransition.chooseActiveTiles();
+    
+    // Restore the exact same tile pattern from the previous page
+    try {
+      const activeIndices = JSON.parse(sessionStorage.getItem('mosaic-active-indices') || '[]');
+      sessionStorage.removeItem('mosaic-active-indices');
+      
+      // Clear all tiles first
+      window.mosaicTransition.tiles.forEach(t => {
+        t.classList.remove('active');
+        t.style.transitionDelay = '';
+      });
+      
+      // Restore the exact same pattern
+      activeIndices.forEach(index => {
+        if (window.mosaicTransition.tiles[index]) {
+          window.mosaicTransition.tiles[index].classList.add('active');
+        }
+      });
+    } catch (e) {
+      // Fallback to random pattern if restoration fails
+      window.mosaicTransition.chooseActiveTiles();
+    }
     
     // Small delay to ensure everything is loaded, then reveal
     setTimeout(() => {

@@ -93,6 +93,12 @@
   transition: transform var(--mosaic-duration) var(--mosaic-easing), opacity 0s;
 }
 
+/* Ensure covering state persists during page transition */
+.mosaic-transition.covering .mosaic-tile.active {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+}
+
 .mosaic-transition.revealing {
   opacity: 1;
 }
