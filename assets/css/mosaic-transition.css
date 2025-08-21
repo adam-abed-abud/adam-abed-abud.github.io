@@ -78,6 +78,7 @@
   transform: scale(0);
   opacity: 0;
   will-change: transform, opacity;
+  aspect-ratio: 1;
 }
 
 .mosaic-tile.active {
@@ -123,7 +124,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   :root {
-    --mosaic-rows: 6;
+    --mosaic-rows: 8;
     --mosaic-cols: 8;
     --mosaic-duration: 600ms;
   }
@@ -131,7 +132,7 @@
 
 @media (max-width: 480px) {
   :root {
-    --mosaic-rows: 4;
+    --mosaic-rows: 6;
     --mosaic-cols: 6;
     --mosaic-duration: 500ms;
   }
