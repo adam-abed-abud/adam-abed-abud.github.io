@@ -103,21 +103,10 @@ class MosaicTransition {
     // Wait for covering animation to complete
     await new Promise(r => setTimeout(r, this.DURATION + maxDelay + 30));
 
-    // Store the covering state before navigation
-    const coveringState = {
-      activeTiles: Array.from(this.tiles).map((tile, index) => ({
-        index,
-        active: tile.classList.contains('active'),
-        delay: tile.style.transitionDelay
-      })),
-      timestamp: Date.now()
-    };
-    
-    // Store in sessionStorage
-    sessionStorage.setItem('mosaic-covering-state', JSON.stringify(coveringState));
-
     // Navigate to new page
     window.location.href = targetUrl;
+
+    // Note: The revealing animation will happen on the new page
   }
 
   async performReveal() {
@@ -279,53 +268,14 @@ document.addEventListener('DOMContentLoaded', () => {
     attributeFilter: ['data-theme', 'class']
   });
   
-  // Check if we need to restore covering state from previous page
-  const coveringStateData = sessionStorage.getItem('mosaic-covering-state');
-  if (coveringStateData && document.referrer && document.referrer.includes(window.location.hostname)) {
-    try {
-      const coveringState = JSON.parse(coveringStateData);
-      const timeSinceTransition = Date.now() - coveringState.timestamp;
-      
-      // Only restore if the transition was recent (within 5 seconds)
-      if (timeSinceTransition < 5000) {
-        // Restore the covering state
-        window.mosaicTransition.overlay.classList.add('covering');
-        
-        // Restore each tile's state
-        coveringState.activeTiles.forEach(tileState => {
-          if (window.mosaicTransition.tiles[tileState.index]) {
-            const tile = window.mosaicTransition.tiles[tileState.index];
-            if (tileState.active) {
-              tile.classList.add('active');
-            }
-            tile.style.transitionDelay = tileState.delay;
-          }
-        });
-        
-        // Clear the stored state
-        sessionStorage.removeItem('mosaic-covering-state');
-        
-        // Perform reveal after a short delay
-        setTimeout(() => {
-          window.mosaicTransition.performReveal();
-        }, 100);
-      } else {
-        // Transition was too old, clean up
-        sessionStorage.removeItem('mosaic-covering-state');
-        window.mosaicTransition.forceCleanup();
-      }
-    } catch (e) {
-      // If restoration fails, clean up
-      sessionStorage.removeItem('mosaic-covering-state');
-      window.mosaicTransition.forceCleanup();
-    }
-  } else if (document.referrer && document.referrer.includes(window.location.hostname)) {
-    // Regular navigation from same site, perform reveal
+  // Perform reveal animation on page load (unless it's a direct page load)
+  if (document.referrer && document.referrer.includes(window.location.hostname)) {
+    // Small delay to ensure everything is loaded
     setTimeout(() => {
       window.mosaicTransition.performReveal();
     }, 100);
   } else {
-    // Direct page load, ensure the overlay is hidden
+    // For direct page loads, ensure the overlay is hidden
     setTimeout(() => {
       window.mosaicTransition.forceCleanup();
     }, 100);
