@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Pointers 
+title: A curated collection of cool/useful pointers
 permalink: /pointers/
 ---
-
-### Here is a curated collection of cool/useful pointers!
 
 - **Research**
   - [Latest physics news from Nature](https://www.nature.com/subjects/physics)
@@ -37,6 +35,7 @@ permalink: /pointers/
 
 - **Weekly blogs**
   - [Netflix Tech Blog](https://netflixtechblog.com/)
+  - [Performance Enginnering from First Principles](https://sirupsen.com/)
   - [Low Latecny Trading Insights](https://lucisqr.substack.com/)
   - [Byte Sized Design](https://bytesizeddesign.substack.com/)
   - [Refactoring Essays](https://refactoring.fm/)

@@ -35,11 +35,12 @@ nav_order: 1
 
 ## Short bio, tl;dr
 
-You can mostly find me working on storage technologies, C++ development [(free guide)](/assets/pdf/modern_cpp_guide_Adam_Abed_Abud.pdf), building data platforms or benchmarking high-performance applications.
+You can mostly find me working on storage technologies, C++ development [(I wrote a guide!)](/assets/pdf/modern_cpp_guide_Adam_Abed_Abud.pdf), building data platforms or benchmarking high-performance applications.
 
 I like to build, test, and play with the latest technologies. These can range from C++/python libraries, developing home automation applications with Arduino/ESP32 microcontrollers, test linux distros or analyzing large data sets (weather, climate, environment, finance etc.) using (not only) machine learning techniques
 
-<span class="fa fa-tasks about-icon"></span> In the past I have worked on:
+<span class="fa fa-tasks about-icon"></span> I have worked on:
+- Worked on novel raw image compression algorithms ( <a href="https://thinklucid.com/tech-briefs/sony-imx490-hdr-sensor-and-flicker-mitigation/">this is a nice illustration of some topics I worked on</a>)
 - <a href="https://www.epj-conferences.org/articles/epjconf/abs/2021/05/epjconf_chep2021_04013/epjconf_chep2021_04013.html">Investigation, benchmarking, market evalution of high-performance storage technologies </a>  (NVMe SSD, persistent memory devices, etc.)
 - Research on <a href="https://iopscience.iop.org/article/10.1088/1742-6596/2438/1/012125/pdf/">Sparse Convolutional Neural Networks for particle classification</a> algorithms at CERN
 - Development of <a href="https://www.epj-conferences.org/articles/epjconf/abs/2021/05/epjconf_chep2021_04014/epjconf_chep2021_04014.html">data-flow architectures for large-scale data acquisition systems (~TB/s)</a> 
