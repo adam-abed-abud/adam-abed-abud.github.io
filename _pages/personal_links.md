@@ -34,6 +34,7 @@ permalink: /links/
   - [Human Benchmark – Cognition Games](https://humanbenchmark.com/)
   - [Nutrition](https://www.eatthismuch.com)
   - [Meal preparation](https://www.eatthismuch.com/)
+  - [Food and meal ideas](https://www.supercook.com)
   - [High resolution anatomy images](https://smart.servier.com/)
 
 - **🎨 Design & Creativity**
