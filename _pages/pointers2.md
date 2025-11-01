@@ -41,6 +41,7 @@ permalink: /pointers/
   - [Refactoring Essays](https://refactoring.fm/)
   - [Uber Engineering](https://www.uber.com/en-IN/blog/engineering/)
   - [Engineering Blogs](https://github.com/kilimchoi/engineering-blogs/)
+  - [Kerkour Blog (rust news)](https://kerkour.com/blog)
 
 - **Image Signal Processing**
   - [NIST resources for Image & Signal Processing](https://www.nist.gov/image-signal-processing)
