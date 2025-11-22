@@ -1,0 +1,603 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Morning Commute Gazette</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --page-bg: #fdf8f3;
+      --outer-bg: #E9E5E5;
+      --ink: #222222;
+      --muted: #5b5b5b;
+      --rule: #b0a89e;
+      --accent: #0b3b6c;
+      --headline-font: "Georgia", "Times New Roman", serif;
+      --body-font: "Georgia", "Times New Roman", serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #f8f5f0 0, var(--outer-bg) 52%);
+      display: flex;
+      justify-content: center;
+      padding: 24px 12px;
+      color: var(--ink);
+      font-family: var(--body-font);
+    }
+
+    .paper {
+      background: var(--page-bg);
+      width: 100%;
+      max-width: 1120px;
+      border: 1px solid #d2c9be;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+      padding: 18px 22px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle edge texture */
+    .paper::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      border: 1px solid rgba(255,255,255,0.7);
+      mix-blend-mode: multiply;
+    }
+
+    /* Top dateline bar */
+    .dateline-strip {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1.2fr;
+      gap: 12px;
+      align-items: center;
+      border-bottom: 1px solid var(--rule);
+      border-top: 1px solid var(--rule);
+      padding: 6px 4px;
+      margin-bottom: 10px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+    }
+
+    .dateline-strip span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .dateline-strip-left {
+      text-align: left;
+    }
+
+    .dateline-strip-center {
+      text-align: center;
+      font-style: italic;
+    }
+
+    .dateline-strip-right {
+      text-align: right;
+    }
+
+    .dateline-weather-pill {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(176,168,158,0.7);
+      background: rgba(255,255,255,0.6);
+    }
+
+    .dateline-weather-pill strong {
+      letter-spacing: 0.18em;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 3px double var(--rule);
+    }
+
+    .masthead-name {
+      font-family: var(--headline-font);
+      font-size: 36px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .masthead-sub {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .masthead-meta {
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+    }
+
+    .masthead-meta span {
+      padding: 1px 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(176,168,158,0.7);
+      background: rgba(255,255,255,0.8);
+    }
+
+    main {
+      margin-top: 8px;
+    }
+
+    .section-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+    }
+
+    .section-title-row span:first-child {
+      font-weight: 700;
+    }
+
+    .section-title-row span:last-child {
+      font-style: italic;
+      letter-spacing: 0.08em;
+    }
+
+    /* Articles layout */
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px 18px;
+    }
+
+    @media (max-width: 900px) {
+      .columns {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .paper {
+        padding: 14px 14px 22px;
+      }
+      .columns {
+        grid-template-columns: 1fr;
+      }
+      .dateline-strip {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .dateline-strip-left,
+      .dateline-strip-right {
+        text-align: center;
+      }
+    }
+
+    .article {
+      padding: 8px 10px 10px;
+      border-bottom: 1px solid rgba(176,168,158,0.6);
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      cursor: pointer;
+      transition: background 120ms ease-out, transform 120ms ease-out, box-shadow 120ms ease-out;
+    }
+
+    .article:last-child {
+      border-bottom: 0;
+    }
+
+    .article:hover {
+      background: rgba(255,255,255,0.7);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+    }
+
+    .article-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .thumb-wrap {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--rule);
+      padding: 4px;
+      background: #f5efe5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thumb-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      /* filter: grayscale(100%); */
+    }
+
+    .headline-block {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .headline {
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .byline {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .dek {
+      font-size: 11px;
+      line-height: 1.45;
+      margin-top: 2px;
+      color: #3c3c3c;
+    }
+
+    .meta-row {
+      margin-top: 4px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+    }
+
+    .meta-tag {
+      border: 1px solid var(--rule);
+      padding: 1px 5px;
+      display: inline-block;
+      border-radius: 999px;
+    }
+
+    .meta-link {
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 18px;
+      border-top: 1px solid var(--rule);
+      padding-top: 6px;
+      font-size: 10px;
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    footer span:last-child {
+      font-family: "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Courier New", monospace;
+    }
+
+    .footer-edition {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="paper">
+    <!-- Top date / time / weather strip -->
+    <div class="dateline-strip">
+      <span class="dateline-strip-left">
+        <span id="dateline-date">—</span>
+      </span>
+      <span class="dateline-strip-center">
+        <span id="dateline-time">—</span>
+      </span>
+      <span class="dateline-strip-right">
+        <span class="dateline-weather-pill">
+          <strong>WEATHER</strong>
+          <span id="dateline-weather">Zürich · 8°C · Overcast</span>
+        </span>
+      </span>
+    </div>
+
+    <header>
+      <div class="masthead-name">Morning Commute Gazette</div>
+      <div class="masthead-sub">Technology · Games · News Digest</div>
+      <div class="masthead-meta">
+        <!-- <span>Daily Edition</span> -->
+        <span>Personal Front Page</span>
+        <!-- <span>For Your Commute</span> -->
+      </div>
+    </header>
+
+    <main>
+      <div class="section-title-row">
+        <span>Today’s Reading</span>
+        <span>Selected links for your ride</span>
+      </div>
+
+      <section class="columns">
+
+        <!-- Hackaday -->
+        <a class="article" href="https://hackaday.com/" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/hackaday.png" alt="Hackaday logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">Hardware Hacks</div>
+              <div class="byline">hackaday.com</div>
+            </div>
+          </div>
+          <p class="dek">
+            Fresh projects, teardowns, and inventive hardware builds from engineers and makers worldwide.
+          </p>
+          <div class="meta-row">
+            <span class="meta-tag">Tech · Hardware</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>
+
+        <!-- Opensource.com -->
+        <a class="article" href="https://opensource.com/" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/opensource.png" alt="Open source logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">Stories from the Open Source World</div>
+              <div class="byline">Opensource.com · opensource.com</div>
+            </div>
+          </div>
+          <p class="dek">
+            Community stories, tutorials, and opinion pieces on Linux, tooling, and open collaboration.
+          </p>
+          <div class="meta-row">
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>
+
+        <!-- daily.dev -->
+        <a class="article" href="https://app.daily.dev/" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/daily_dev.png" alt="daily.dev logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">Curated News for Developers</div>
+              <div class="byline">daily.dev · app.daily.dev</div>
+            </div>
+          </div>
+          <p class="dek">
+            A personalized front page of articles, tutorials, and news for modern software developers.
+          </p>
+          <div class="meta-row">
+            <span class="meta-tag">Development</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>
+
+        <!-- Chess.com -->
+        <a class="article" href="https://www.chess.com" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/chess.jpeg" alt="Chess.com logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">Chess Games, Puzzles and Training</div>
+              <div class="byline">Chess.com</div>
+            </div>
+          </div>
+          <div class="meta-row">
+            <span class="meta-tag">Games</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>
+
+        <!-- BrainHQ / Naia Live -->
+        <a class="article" href="https://www.brainhq.com" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/naia.jpeg" alt="BrainHQ logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">Daily Brain Training Exercises</div>
+              <div class="byline">Naia Live</div>
+            </div>
+          </div>
+          <p class="dek">
+            Short, science-based exercises designed to train memory, attention, and processing speed.
+          </p>
+          <div class="meta-row">
+            <span class="meta-tag">Brain Training</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>
+
+        <!-- Google News -->
+        <a class="article" href="https://news.google.com" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/google_news.png" alt="Google News logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">Headlines from Around the World</div>
+              <div class="byline">Google News · news.google.com</div>
+            </div>
+          </div>
+          <p class="dek">
+            Top stories and in-depth coverage from major outlets, grouped by topic and region.
+          </p>
+          <div class="meta-row">
+            <span class="meta-tag">World News</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>
+
+        <!-- YouTube -->
+        <a class="article" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/youtube.png" alt="YouTube logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">YouTube</div>
+              <div class="byline">Videos and documentaries</div>
+            </div>
+          </div>
+          <div class="meta-row">
+            <span class="meta-tag">Videos</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>
+
+        <!-- Podcasts -->
+        <a class="article" href="https://www.apple.com/apple-podcasts/" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/apple_podcast.png" alt="Apple Podcasts logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">Apple Podcasts</div>
+              <div class="byline">Various podcasts from around the world</div>
+            </div>
+          </div>
+          <p class="dek">
+            Follow your favourite shows or discover new voices while you travel.
+          </p>
+          <div class="meta-row">
+            <span class="meta-tag">Podcasts</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>    
+
+        <!-- Perplexity News -->
+        <a class="article" href="https://www.perplexity.ai/search/news" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/perplexity.png" alt="Perplexity logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">AI-Assisted News Briefings</div>
+              <div class="byline">Perplexity · perplexity.ai</div>
+            </div>
+          </div>
+          <p class="dek">
+            Concise, AI-generated summaries and follow-up answers for the latest stories and topics.
+          </p>
+          <div class="meta-row">
+            <span class="meta-tag">AI · News</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>               
+
+        <!-- Phoronix -->
+        <a class="article" href="https://www.phoronix.com/" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/phronix.png" alt="Phoronix logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">Phoronix</div>
+              <div class="byline">Latest Linux Hardware Reviews, Open-Source News & Benchmarks</div>
+            </div>
+          </div>
+          <div class="meta-row">
+            <span class="meta-tag">Linux · News</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>     
+
+    <!-- Comics -->
+        <a class="article" href="https://www.comics.com/" target="_blank" rel="noopener noreferrer">
+          <div class="article-header">
+            <div class="thumb-wrap">
+              <img src="./morning_commute/comcis.png" alt="Phoronix logo">
+            </div>
+            <div class="headline-block">
+              <div class="headline">Comics</div>
+              <div class="byline">Marvel and DC comics</div>
+            </div>
+          </div>
+          <div class="meta-row">
+            <span class="meta-tag">Read</span>
+            <span class="meta-link">Open site »</span>
+          </div>
+        </a>             
+
+      </section>
+    </main>
+
+    <footer>
+      <span class="footer-edition">Personal edition · Morning commute journal</span>
+      <span>⌘ + L · type “commute” · ↩︎</span>
+    </footer>
+  </div>
+
+  <script>
+    // Simple date & time for the dateline strip
+    (function () {
+      const dateEl = document.getElementById("dateline-date");
+      const timeEl = document.getElementById("dateline-time");
+
+      try {
+        const now = new Date();
+        const dateFormatter = new Intl.DateTimeFormat(undefined, {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        });
+
+        const timeFormatter = new Intl.DateTimeFormat(undefined, {
+          hour: "numeric",
+          minute: "2-digit"
+        });
+
+        if (dateEl) {
+          dateEl.textContent = dateFormatter.format(now);
+        }
+
+        if (timeEl) {
+          timeEl.textContent = timeFormatter.format(now);
+        }
+      } catch (e) {
+        if (dateEl) dateEl.textContent = "";
+        if (timeEl) timeEl.textContent = "";
+      }
+    })();
+  </script>
+</body>
+</html>
