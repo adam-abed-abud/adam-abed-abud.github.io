@@ -20,7 +20,7 @@ social: false# includes social icons at the bottom of the page
 
 <p><span class="fa fa-code about-icon"></span> I work in R&D, ML/AI, storage technologies, Software and Algorithm development, image vision, and data processing in mission-critical applications in automotive, earth observation, and life science industries</p>
 
-<p><span class="fa fa-superpowers about-icon"></span> Deeply passionate about sport, nutrition and wellness. Founder of <a href="https://naia.live"> Naia Live </a> with the goal of redefining health and longevity. Discover <a href="https://healthlabs.vercel.app/"> HealthLabs </a>, a platform with resources designed to make modern wellness approachable, actionable, and truly useful or explore the <a href="https://magazine.naia.live/"> magazine</a>.</p>
+<p><span class="fa fa-heartbeat about-icon"></span> Deeply passionate about sport, nutrition and wellness. Founder of <a href="https://naia.live"> Naia Live </a> with the goal of redefining health and longevity. Discover <a href="https://healthlabs.vercel.app/"> HealthLabs </a>, a platform to make modern wellness approachable or explore the <a href="https://magazine.naia.live/"> magazine</a> for more details.</p>
 
 <span class="fa fa-line-chart about-icon"></span> Business mentor supporting startups in B2B, strategy, marketing and branding. [Startup](javascript:void(0)){: .figure-link data-zoomable-image="assets/img/singa1.jpg"} [competition](javascript:void(0)){: .figure-link data-zoomable-image="assets/img/singa2.jpg"} [judge](javascript:void(0)){: .figure-link data-zoomable-image="assets/img/singa3.jpg"} in Zurich.
 
