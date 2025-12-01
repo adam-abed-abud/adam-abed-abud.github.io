@@ -16,6 +16,9 @@ children:
   - title: divider
   - title: Weather
     permalink: /weather/
+  - title: divider
+  - title: HealthLabs
+    permalink: /healthlabs/
   # - title: divider
   # - title: Tetris
   #   permalink: /tetris/index.html
