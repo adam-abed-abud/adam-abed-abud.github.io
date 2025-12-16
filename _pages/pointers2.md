@@ -24,8 +24,10 @@ permalink: /pointers/
   - [C++ get started guide](https://howistart.org/posts/cpp/1//)
   - [Modern C++ blog](https://www.modernescpp.com/)
   - [C++ blog updates](https://www.sandordargo.com/)
+  - [Fluent C++](https://www.fluentcpp.com)
+  - [Y Combinator News (HackerNews)](https://news.ycombinator.com)
   - [POCO libraries](https://pocoproject.org/pocopro.html#osp)
-  - [Hacker News](https://thehackernews.com/)
+  - [Other Hacker News](https://thehackernews.com/)
   - [Daily Computer Science Papers](https://pocoproject.org/pocopro.html#osp)
   - [Tom's Hardware Blog](https://www.tomshardware.com)
   - [Daily Computer Science](https://blog.acolyer.org)
@@ -44,6 +46,7 @@ permalink: /pointers/
   - [Uber Engineering](https://www.uber.com/en-IN/blog/engineering/)
   - [Engineering Blogs](https://github.com/kilimchoi/engineering-blogs/)
   - [Kerkour Blog (rust news)](https://kerkour.com/blog)
+  - [David Heinemeier Hansson's blog](https://world.hey.com/dhh)
 
 - **Image Signal Processing**
   - [NIST resources for Image & Signal Processing](https://www.nist.gov/image-signal-processing)

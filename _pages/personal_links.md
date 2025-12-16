@@ -72,6 +72,7 @@ permalink: /links/
   - [Party Game](https://www.airconsole.com/)
   - [Car simulator](https://slowroads.io/)
   - [Drive and Travel](https://drivenlisten.com/)
+  - [VIM Adventures](https://vim-adventures.com/)
 
 - **🛠️ Utilities & Fixes**
   - [Car Repair Tutorials & Tips](https://www.carcarekiosk.com)
