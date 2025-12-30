@@ -28,6 +28,7 @@ permalink: /pointers/
   - [CPU, memory and graphics benchmarks](https://www.cpubenchmark.net/)
   - [App creator: Dream it, code it](https://cerebrascoder.com/)
   - [Roadmap for learning any CS topic](https://roadmap.sh/)
+  - [Algorithmica](https://en.algorithmica.org/hpc/)
 
 - **C++**
   - [Modern C++ guide (tips and tricks)](https://stuartwheaton.com/blog/2020-06-14-c++11-guide/)
@@ -51,6 +52,8 @@ permalink: /pointers/
   - [David Heinemeier Hansson's blog](https://world.hey.com/dhh)
   - [Blog about Linux, profiling, and benchmarking](http://www.brendangregg.com)
   - [Performance Enginnering from First Principles](https://sirupsen.com/)
+  - [Jon Gjengset (rust educator)](https://thesquareplanet.com/)
+  - [Martin Fowler (refactoring, good architecture)](https://martinfowler.com/)
 
 - **Image Signal Processing**
   - [NIST resources for Image & Signal Processing](https://www.nist.gov/image-signal-processing)
