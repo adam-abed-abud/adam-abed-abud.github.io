@@ -20,11 +20,11 @@ permalink: /links/
 
 
 - **🧰 Office Tools**
-  - [PDF Tools](https://www.pdfescape.com/)
-  - [PDF Manipulator](https://www.pdfescape.com/online-pdf-editor/)
+  - [PDF tools](https://www.pdfescape.com/online-pdf-editor/)
   - [Stirling PDF – All-in-One PDF Toolkit](https://www.stirlingpdf.com/)
   - [Paint in Browser (PaintJS)](https://jspaint.app)
   - [Free PDF Library](https://www.pdfdrive.com/)
+  - [Convert anything](https://vert.sh/)
 
 - **🧬 Health • Biohacking • Longevity**
   - [Muscle Wiki](https://musclewiki.com/)

@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: Scientist | Computer Engineer | Entrepeneur | PhD
+subtitle: Scientist | Software Engineer | Entrepeneur | PhD
 
 profile:
   align: right
@@ -20,15 +20,15 @@ social: false# includes social icons at the bottom of the page
 
 <p>R&D Software Engineer / Applied Physicist passionate about turning cutting-edge research into real-world solutions. My main goal is to make computer systems compute fast and autonomously</p>
 
-<p><span class="fa fa-code about-icon"></span> I work in R&D, HPC, ML/AI, storage technologies, Software and Algorithm development, image vision, and data processing in mission-critical applications in automotive, earth observation, and life science industries</p>
+<p><span class="fa fa-code about-icon"></span> I work in HPC, algorithms, computer vision, robotics and data processing for mission-critical applications, using ML/AI in the Automotive, Earth observation, and Life Science industries.</p>
 
 <p><span class="fa fa-heartbeat about-icon"></span> Deeply passionate about sport, nutrition and wellness. Founder of <a href="https://naia.live"> Naia Live </a> with the goal of redefining health and longevity. Discover <a href="https://healthlabs.vercel.app/"> HealthLabs </a>, a platform to make modern wellness approachable or explore the <a href="https://magazine.naia.live/"> magazine</a> for more details.</p>
 
 <span class="fa fa-line-chart about-icon"></span> Business mentor supporting startups in B2B, strategy, marketing and branding. [Startup](javascript:void(0)){: .figure-link data-zoomable-image="assets/img/singa1.jpg"} [competition](javascript:void(0)){: .figure-link data-zoomable-image="assets/img/singa2.jpg"} [judge](javascript:void(0)){: .figure-link data-zoomable-image="assets/img/singa3.jpg"} in Zurich.
 
-<p><span class="fa fa-rocket about-icon"></span> Ex-CERN. Data Acquisition and storage technologies expert. Design, development and operation of PB-scale and high-throughput data systems (~TB/s). Lead developer and maintainer of mission-critical signal-to-noise data software</p>
+<p><span class="fa fa-rocket about-icon"></span> Ex-CERN. Data Acquisition and storage technologies expert. Design, development and operation of PB-scale and high-throughput data systems (~TB/s). Lead developer and maintainer of mission-critical signal-to-noise data software.</p>
 
-<p><span class="fa fa-university about-icon"></span><a href="https://livrepository.liverpool.ac.uk/3166725/1/201451432_Jul2022.pdf/"> PhD in Applied Physics</a> specializing in computer engineering and data storage technologies. MSc in Nuclear and Particle Physics </p>
+<p><span class="fa fa-university about-icon"></span><a href="https://livrepository.liverpool.ac.uk/3166725/1/201451432_Jul2022.pdf/"> PhD in Applied Physics</a> specializing in computer engineering and data storage technologies. MSc in Nuclear and Particle Physics.</p>
 
 
 ---
