@@ -29,6 +29,7 @@ permalink: /pointers/
   - [App creator: Dream it, code it](https://cerebrascoder.com/)
   - [Roadmap for learning any CS topic](https://roadmap.sh/)
   - [Algorithmica](https://en.algorithmica.org/hpc/)
+  - [Python Interpreter in the browser](https://trinket.io)
 
 - **C++**
   - [Modern C++ guide (tips and tricks)](https://stuartwheaton.com/blog/2020-06-14-c++11-guide/)
@@ -46,6 +47,7 @@ permalink: /pointers/
   - [Refactoring Essays](https://refactoring.fm/)
   - [Uber Engineering](https://www.uber.com/en-IN/blog/engineering/)
   - [Engineering Blogs](https://github.com/kilimchoi/engineering-blogs/)
+  - [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/)
 
 - **People**
   - [Kerkour Blog (rust news)](https://kerkour.com/blog)
