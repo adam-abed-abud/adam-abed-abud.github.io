@@ -18,7 +18,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false# includes social icons at the bottom of the page
 ---
 
-<p>R&D Software Engineer / Applied Physicist passionate about turning cutting-edge research into real-world solutions. My main goal is to make computer systems compute fast and autonomously</p>
+<p>Making computer systems compute fast and autonomously.</p>
+
+<p>R&D Software Engineer / Applied Physicist passionate about turning cutting-edge research into real-world solutions. I'm a C++/Linux enthusiast and I like to build tech projects.</p>
 
 <p><span class="fa fa-code about-icon"></span> I work in HPC, algorithms, computer vision, robotics and data processing for mission-critical applications, using ML/AI in the Automotive, Earth observation, and Life Science industries.</p>
 

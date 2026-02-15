@@ -48,6 +48,7 @@ permalink: /pointers/
   - [Uber Engineering](https://www.uber.com/en-IN/blog/engineering/)
   - [Engineering Blogs](https://github.com/kilimchoi/engineering-blogs/)
   - [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/)
+  - [Relentless curiosity](https://jonlonsdale.substack.com/)
 
 - **People**
   - [Kerkour Blog (rust news)](https://kerkour.com/blog)
