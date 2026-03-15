@@ -4,7 +4,7 @@ title: Software Engineering Craft
 permalink: /software-engineering/
 ---
 
-Engineering craft is about teams sharing habits, standards, and references so quality stays high as we move fast in solving problems. This page collects resources to help us level-up and improve in our software craft.
+I really care about software engineering and often think about how I can improve both myself and the organizations I work with in this craft. In the end, engineering craft is about teams sharing habits, standards, and references so quality stays high while we move fast to solve problems. This page collects resources that I’ve found helpful to level up and improve in our software craft. However, the best teacher is always learning and practicing.
 
 - **Core Guides**
 
