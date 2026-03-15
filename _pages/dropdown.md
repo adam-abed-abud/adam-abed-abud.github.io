@@ -6,11 +6,14 @@ nav_order: 8
 dropdown: true
 children:
   - title: Pointers
-    permalink: /pointers/    
+    permalink: /pointers/
   - title: divider
   - title: Resources
     permalink: /links/
-  - title: divider    
+  - title: divider
+  - title: Software Engineering
+    permalink: /software-engineering
+  - title: divider
   - title: Storage Resources
     permalink: /storage/
   - title: divider
