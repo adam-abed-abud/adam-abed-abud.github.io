@@ -6,7 +6,7 @@ permalink: /software-engineering/
 
 I really care about software engineering and often think about how I can improve both myself and the organizations I work with in this craft. In the end, engineering craft is about teams sharing habits, standards, and references so quality stays high while we move fast to solve problems. This page collects resources that I’ve found helpful to level up and improve in our software craft. However, the best teacher is always learning and practicing.
 
-- **Core Guides**
+## **Core Guides**
 
 The following represent resources every developer in an organization should read at least once:
 
@@ -14,7 +14,7 @@ The following represent resources every developer in an organization should read
   - [The Pragmatic Programmer quicknotes](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/)
   - [What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
 
-- **C++ Craft**
+## **C++ Craft**
 
 There are many resources target at improving your craft in C++. Here is a very short subselection. Check in `/pointers` for more resources.
 
@@ -22,23 +22,23 @@ There are many resources target at improving your craft in C++. Here is a very s
   - [CppCon talks (YouTube)](https://www.youtube.com/user/CppCon)
   - [Best practices by Jason Turner](https://github.com/cpp-best-practices/cppbestpractices/blob/master/00-Table_of_Contents.md)
 
-- **Software Engineering**
+## **Software Engineering**
 
 Software engineering is difficult. We always need to read resources, learn from the giants before us and improve our systems. Here is some material worth looking up:
 
   - [Principles of API design](https://wiki.qt.io/API_Design_Principles)
   - [The Little Manual of API design](https://www.tcs.ifi.lmu.de/staff/jasmin-blanchette/api-design.pdf)
 
-- **Career upskilling**
+## **Career upskilling**
 
 Being a senior engineer or tech leader is not about writing more code or solving every technical challenge. It is about deeply understanding the problems, clarifying what truly matters, and guiding people and systems toward the simplest, most effective solutions. It means asking better questions instead of jumping to answers, creating alignment across teams, and making decisions that scale beyond your own individual contribution. At that level, impact comes less from the code you personally write and more from the clarity, direction, and judgment you bring to the entire engineering organization.
 
   - [Dev Ladder: growing engineers](https://devladder.substack.com/)
 
-- **Team Habits**
+## **Team Habits**
   - [Coding Style Guide](https://google.github.io/styleguide/)
 
-- **Resources**
+## **Resources**
 
 Great tools for improving software engineering craft help engineers explore how code actually behaves, understand what happens under the hood, and play through hands-on experimentation.
 
