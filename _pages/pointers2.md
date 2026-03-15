@@ -49,6 +49,7 @@ permalink: /pointers/
   - [Engineering Blogs](https://github.com/kilimchoi/engineering-blogs/)
   - [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/)
   - [Relentless curiosity](https://jonlonsdale.substack.com/)
+  - [LeetArxiv](https://leetarxiv.substack.com/)
 
 - **People**
   - [Kerkour Blog (rust news)](https://kerkour.com/blog)

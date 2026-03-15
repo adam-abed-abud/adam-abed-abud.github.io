@@ -77,3 +77,8 @@ permalink: /links/
 - **🛠️ Utilities & Fixes**
   - [Car Repair Tutorials & Tips](https://www.carcarekiosk.com)
 
+- **Podcast**
+  - [Lex Fridman](https://www.youtube.com/@lexfridman/videos)
+  - [Dwarkesh Patel](https://www.youtube.com/@DwarkeshPatel/videos)
+  - [Andrew Huberman](https://www.youtube.com/@hubermanlab/videos)
+  - [The Diary of A CEO](https://www.youtube.com/@TheDiaryOfACEO/videos)
