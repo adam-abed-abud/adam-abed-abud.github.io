@@ -246,7 +246,7 @@ ul.task-list input[type="checkbox"] {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color-navbar-translucent);
+  background-color: rgba(232, 228, 228, 0.95);
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -255,6 +255,10 @@ ul.task-list input[type="checkbox"] {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="dark"] .navbar {
+  background-color: rgba(0, 0, 0, 0.95);
 }
 
 html[data-theme="dark"] .navbar.scrolled {
