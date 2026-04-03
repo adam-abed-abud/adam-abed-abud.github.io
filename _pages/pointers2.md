@@ -33,6 +33,7 @@ permalink: /pointers/
 
 - **C++**
   - [Modern C++ guide (tips and tricks)](https://stuartwheaton.com/blog/2020-06-14-c++11-guide/)
+  - [Modern C++ Features](https://github.com/AnthonyCalandra/modern-cpp-features)
   - [Abseil (C++ tips)](https://abseil.io/)
   - [C++ get started guide](https://howistart.org/posts/cpp/1//)
   - [Modern C++ blog](https://www.modernescpp.com/)
