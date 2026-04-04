@@ -39,6 +39,7 @@ permalink: /pointers/
   - [Modern C++ blog](https://www.modernescpp.com/)
   - [C++ blog updates](https://www.sandordargo.com/)
   - [Fluent C++](https://www.fluentcpp.com)
+  - [C++ puzzles](https://medium.com/@weidagang/c-puzzles-a428616f7332)
   - [Awesome list of C++ resources](https://github.com/fffaraz/awesome-cpp?tab=readme-ov-file)
 
 - **Weekly blogs**
