@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Writing fast to disk in Rust
-date: 2026-04-18 14:11:00
+date: 2026-04-19 14:11:00
 description: How hard can it possibly be? (HAIPE)
 featured: true
 ---
