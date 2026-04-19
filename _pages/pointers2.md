@@ -30,6 +30,7 @@ permalink: /pointers/
   - [Roadmap for learning any CS topic](https://roadmap.sh/)
   - [Algorithmica](https://en.algorithmica.org/hpc/)
   - [Python Interpreter in the browser](https://trinket.io)
+  - [Awesome CTO Resources](https://github.com/kuchin/awesome-cto)
 
 - **C++**
   - [Modern C++ guide (tips and tricks)](https://stuartwheaton.com/blog/2020-06-14-c++11-guide/)
