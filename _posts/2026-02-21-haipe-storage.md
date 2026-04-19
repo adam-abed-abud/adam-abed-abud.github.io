@@ -36,9 +36,7 @@ Read 1073741824 bytes
 Wrote 1073741824 bytes in 1.110s
 ```
 
-<details>
-<summary>Code</summary>
-
+Code:
 ```rust
 use std::fs;
 use std::time::Instant;
@@ -54,14 +52,11 @@ fn main() {
     println!("Wrote {} bytes in {:.3?}", data.len(), elapsed);
 }
 ```
-</details>
 
 ## Adding the flush to disk
 The following code adds the direct flushing to disk.
 
-<details>
-<summary>Code</summary>
-
+Code:
 ```rust
 use std::time::Instant;
 use std::io::Write;
@@ -85,8 +80,6 @@ fn main() {
     println!("Wrote {} bytes in {:.3?}", data.len(), elapsed);
 }
 ```
-</details>
-
 
 Here is the output that I got.
 
@@ -109,9 +102,7 @@ Run the following command to drop the page cache:
 sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'
 ```
 
-<details>
-<summary>Here is the updated code: </summary>
-
+Code:
 ```rust
 use std::fs;
 use std::time::Instant;
@@ -140,7 +131,6 @@ fn main() {
 
 }
 ```
-</details>
 
 ## Comparison with DD? Buffered writes?
 
@@ -163,9 +153,7 @@ That writes 1 GB of zeros (no CPU bottleneck) and `conv=fdatasync` forces a flus
 
 Right now we do one giant 1 GB write_all() call. In real systems, you often write in chunks (e.g., streaming data as it arrives). Let's see how chunk size affects performance.
 
-<details>
-<summary>Here is the code</summary>
-
+Code:
 ```rust
 use std::fs::File;
 use std::io::BufWriter;
@@ -213,7 +201,6 @@ fn main() {
     );
 }
 ```
-</details>
 
 Notice in the above code how expressive Rust is (I'm still a beginner on Rust): `data.chunks(chunk_size)` returns an iterator of slices or how the buffered writer takes ownership of the file (it moves in).
 
@@ -228,9 +215,7 @@ Wrote 1024.0 MB in 1.560s (656.3 MB/s) [chunk=4096]
 
 Let's change the code such that we write chunks directly to disk.
 
-<details>
-<summary>As usual, here is the code:</summary>
-
+Code:
 ```rust
 use std::fs::File;
 use std::io::Write;
@@ -275,7 +260,6 @@ fn main() {
     );
 }
 ```
-</details>
 
 Here is the output that I got:
 ```
@@ -292,9 +276,7 @@ Note that this crashes for 10GB file writing because the OS killed your process.
 
 Instead of `fs::read()` (load everything), we open both files and copy chunk by chunk. This uses only chunk_size bytes of RAM, no matter how big the file.
 
-<details>
-<summary>Here is the code:</summary>
-
+Code:
 ```rust
 use std::env;
 use std::fs::File;
@@ -349,8 +331,6 @@ fn main() {
     );
 }
 ```
-</details>
-
 
 Is there a difference in `Release build`? Let's see.
 
@@ -370,9 +350,7 @@ Are input and output/copy on the same physical disk? If so, the disk head (or NV
 
 Here we write a constant quantity directly to file.
 
-<details>
-<summary>Code</summary>
-
+Code:
 ```rust
   use std::env;
   use std::fs::File;
@@ -418,7 +396,6 @@ Here we write a constant quantity directly to file.
       );
   }
 ```
-</details>
 
 Run it like this:
 ```sh
