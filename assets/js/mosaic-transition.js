@@ -25,14 +25,16 @@ class MosaicTransition {
     // Create overlay
     this.createOverlay();
     
-    // Build grid
-    this.buildGrid();
+    // Build a square-tile grid sized from the current viewport
+    this.syncGridToViewport();
     
     // Intercept navigation
     this.interceptNavigation();
     
     // Ensure cleanup on page unload
     this.setupCleanup();
+
+    this.setupResizeHandling();
   }
 
   createOverlay() {
@@ -49,14 +51,44 @@ class MosaicTransition {
     this.tiles = [];
 
     // Build grid
-    for (let r = 0; r < this.ROWS; r++) {
-      for (let c = 0; c < this.COLS; c++) {
+    for (let r = 0; r < this.activeRows; r++) {
+      for (let c = 0; c < this.activeCols; c++) {
         const tile = document.createElement('div');
         tile.className = 'mosaic-tile';
         this.tiles.push(tile);
         this.overlay.appendChild(tile);
       }
     }
+  }
+
+  syncGridToViewport() {
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    const tileSize = Math.min(viewportWidth / this.COLS, viewportHeight / this.ROWS);
+
+    this.activeCols = Math.max(1, Math.ceil(viewportWidth / tileSize));
+    this.activeRows = Math.max(1, Math.ceil(viewportHeight / tileSize));
+
+    this.overlay.style.gridTemplateColumns = `repeat(${this.activeCols}, ${tileSize}px)`;
+    this.overlay.style.gridTemplateRows = `repeat(${this.activeRows}, ${tileSize}px)`;
+
+    this.buildGrid();
+  }
+
+  setupResizeHandling() {
+    let resizeTimer;
+
+    const onResize = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (!this.isTransitioning) {
+          this.syncGridToViewport();
+        }
+      }, 100);
+    };
+
+    window.addEventListener('resize', onResize);
+    window.addEventListener('orientationchange', onResize);
   }
 
   chooseActiveTiles() {
