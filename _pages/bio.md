@@ -54,17 +54,11 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 <li> I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" /> </li>
 <li> My interests outside of science and computers include bio-hacking, mixing cusines from different countries, and reading about history</li> -->
 
-<button
-  class="expand-toggle"
-  onclick="toggleExpanded('expandedContent', this, 'Read more about my journey →', 'Less details ↑')"
->
+<button class="expand-toggle" onclick="toggleExpanded()">
   Read more about my journey →
 </button>
 
-<button
-  class="expand-toggle"
-  onclick="toggleExpanded('personalManualContent', this, 'Personal User Manual →', 'Hide Personal User Manual ↑')"
->
+<button class="expand-toggle" onclick="toggleManual()">
   Personal User Manual →
 </button>
 
@@ -125,16 +119,29 @@ Some more facts about thinks I like (in no particular order):
 </div>
 
 <script>
-function toggleExpanded(contentId, buttonEl, openText, closeText) {
-  const content = document.getElementById(contentId);
-  const button = buttonEl;
+function toggleExpanded() {
+  const content = document.getElementById('expandedContent');
+  const button = document.querySelector('.expand-toggle');
 
   if (content.classList.contains('show')) {
     content.classList.remove('show');
-    button.innerHTML = openText;
+    button.innerHTML = 'Read more about my journey →';
   } else {
     content.classList.add('show');
-    button.innerHTML = closeText;
+    button.innerHTML = 'Less details ↑';
+  }
+}
+
+function toggleManual() {
+  const content = document.getElementById('personalManualContent');
+  const button = document.querySelectorAll('.expand-toggle')[1];
+
+  if (content.classList.contains('show')) {
+    content.classList.remove('show');
+    button.innerHTML = 'Personal User Manual →';
+  } else {
+    content.classList.add('show');
+    button.innerHTML = 'Hide Personal User Manual ↑';
   }
 }
 </script>
