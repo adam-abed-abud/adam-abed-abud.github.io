@@ -55,9 +55,8 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 <li> My interests outside of science and computers include bio-hacking, mixing cusines from different countries, and reading about history</li> -->
 
 <button
-  id="journeyToggle"
   class="expand-toggle"
-  onclick="toggleJourney()"
+  onclick="toggleExpanded()"
 >
   Read more about my journey →
 </button>
@@ -65,12 +64,12 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 <button
   id="manualToggle"
   class="expand-toggle"
-  onclick="toggleManual()"
+  onclick="toggleManualExpanded()"
 >
   Personal User Manual →
 </button>
 
-<div class="expanded-content" id="personalManualContent">
+<div class="expanded-content" id="personalManualContent" style="display: none;">
 <div markdown="1">
 
 The idea is modeled on Urs Hölzle’s “Personal User Manual”: a short document that helps others understand how to best work with and interact with me.
@@ -127,9 +126,9 @@ Some more facts about thinks I like (in no particular order):
 </div>
 
 <script>
-function toggleJourney() {
+function toggleExpanded() {
   const content = document.getElementById('expandedContent');
-  const button = document.getElementById('journeyToggle');
+  const button = document.querySelector('.expand-toggle');
 
   if (content.classList.contains('show')) {
     content.classList.remove('show');
@@ -140,15 +139,15 @@ function toggleJourney() {
   }
 }
 
-function toggleManual() {
+function toggleManualExpanded() {
   const content = document.getElementById('personalManualContent');
   const button = document.getElementById('manualToggle');
 
-  if (content.classList.contains('show')) {
-    content.classList.remove('show');
+  if (content.style.display === 'block') {
+    content.style.display = 'none';
     button.innerHTML = 'Personal User Manual →';
   } else {
-    content.classList.add('show');
+    content.style.display = 'block';
     button.innerHTML = 'Hide Personal User Manual ↑';
   }
 }
