@@ -56,14 +56,14 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 
 <button
   class="expand-toggle"
-  onclick="toggleExpanded()"
+  onclick="toggleExpanded('expandedContent', this, 'Read more about my journey →', 'Less details ↑')"
 >
   Read more about my journey →
 </button>
 
 <button
   class="expand-toggle"
-  onclick="toggleManualExpanded()"
+  onclick="toggleExpanded('personalManualContent', this, 'Personal User Manual →', 'Hide Personal User Manual ↑')"
 >
   Personal User Manual →
 </button>
@@ -125,29 +125,16 @@ Some more facts about thinks I like (in no particular order):
 </div>
 
 <script>
-function toggleExpanded() {
-  const content = document.getElementById('expandedContent');
-  const button = document.querySelector('.expand-toggle');
+function toggleExpanded(contentId, buttonEl, openText, closeText) {
+  const content = document.getElementById(contentId);
+  const button = buttonEl;
 
   if (content.classList.contains('show')) {
     content.classList.remove('show');
-    button.innerHTML = 'Read more about my journey →';
+    button.innerHTML = openText;
   } else {
     content.classList.add('show');
-    button.innerHTML = 'Less details ↑';
-  }
-}
-
-function toggleManualExpanded() {
-  const content = document.getElementById('personalManualContent');
-  const button = document.querySelectorAll('.expand-toggle')[1];
-
-  if (content.classList.contains('show')) {
-    content.classList.remove('show');
-    button.innerHTML = 'Personal User Manual →';
-  } else {
-    content.classList.add('show');
-    button.innerHTML = 'Hide Personal User Manual ↑';
+    button.innerHTML = closeText;
   }
 }
 </script>
