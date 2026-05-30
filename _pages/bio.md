@@ -62,14 +62,13 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 </button>
 
 <button
-  id="manualToggle"
   class="expand-toggle"
   onclick="toggleManualExpanded()"
 >
   Personal User Manual →
 </button>
 
-<div class="expanded-content" id="personalManualContent" style="display: none;">
+<div class="expanded-content" id="personalManualContent">
 <div markdown="1">
 
 The idea is modeled on Urs Hölzle’s “Personal User Manual”: a short document that helps others understand how to best work with and interact with me.
@@ -141,13 +140,13 @@ function toggleExpanded() {
 
 function toggleManualExpanded() {
   const content = document.getElementById('personalManualContent');
-  const button = document.getElementById('manualToggle');
+  const button = document.querySelectorAll('.expand-toggle')[1];
 
-  if (content.style.display === 'block') {
-    content.style.display = 'none';
+  if (content.classList.contains('show')) {
+    content.classList.remove('show');
     button.innerHTML = 'Personal User Manual →';
   } else {
-    content.style.display = 'block';
+    content.classList.add('show');
     button.innerHTML = 'Hide Personal User Manual ↑';
   }
 }
