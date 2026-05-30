@@ -21,6 +21,17 @@ nav_order: 1
   opacity: 0.8;
 }
 
+.expand-toggle-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.expand-toggle-row .expand-toggle {
+  margin: 0;
+}
+
 .expanded-content {
   display: none;
   margin-top: 2rem;
@@ -54,13 +65,15 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 <li> I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" /> </li>
 <li> My interests outside of science and computers include bio-hacking, mixing cusines from different countries, and reading about history</li> -->
 
-<button class="expand-toggle" onclick="toggleExpanded()">
-  Read more about my journey →
-</button>
+<div class="expand-toggle-row">
+  <button class="expand-toggle" onclick="toggleExpanded()">
+    Read more about my journey →
+  </button>
 
-<button class="expand-toggle" onclick="toggleManual()">
-  Personal User Manual →
-</button>
+  <button class="expand-toggle" onclick="toggleManual()">
+    Personal User Manual →
+  </button>
+</div>
 
 <div class="expanded-content" id="personalManualContent">
 <div markdown="1">
