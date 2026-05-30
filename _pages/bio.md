@@ -54,9 +54,42 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 <li> I'm originally from Iraq <img src="../assets/img/iraq.png" height="20px" /> and I have lived in Italy <img src="../assets/img/italy.png" height="20px" />, Germany <img src="../assets/img/germany.png" height="20px" />, Sweden <img src="../assets/img/sweden.png" height="20px" />, France <img src="../assets/img/france.png" height="20px" /> and Switzerland <img src="../assets/img/switzerland.png" height="20px" /> </li>
 <li> My interests outside of science and computers include bio-hacking, mixing cusines from different countries, and reading about history</li> -->
 
-<button class="expand-toggle" onclick="toggleExpanded()">
+<button
+  class="expand-toggle"
+  onclick="toggleExpanded('expandedContent', this, 'Read more about my journey →', 'Less details ↑')"
+>
   Read more about my journey →
 </button>
+
+<button
+  class="expand-toggle"
+  onclick="toggleExpanded('personalManualContent', this, 'Personal User Manual →', 'Hide Personal User Manual ↑')"
+>
+  Personal User Manual →
+</button>
+
+<div class="expanded-content" id="personalManualContent">
+<div markdown="1">
+
+The idea is modeled on Urs Hölzle’s “Personal User Manual”: a short document that helps others understand how to best work with and interact with me.
+
+- I prefer in-person conversations; async chat messages are also acceptable
+- Best for quick (not urgent) questions: Google Chat. For important/urgent matters come and speak to me directly. I will always make time for it
+- Peak productivity is in the morning. I’m a morning person🦉
+- If we are solving a problem, please share all relevant information. Do not assume anything. Better share the details before the meeting, I prefer to prepare for meetings
+- I don’t mind verbose communication in async conversations. I believe it helps understanding the context
+- I believe in the 80/20 rule. Let’s get most of the work done and invest the rest in landing the task properly
+- I enjoy mentoring and teaching
+- I prefer to work in parallel. One core task and at most 2 parallel tasks (if they are self contained). I believe they help me get distracted when stuck on the core problem I’m solving
+- Show, don’t tell
+- Always curious and hungry to learn something new every day
+- Any constructive feedback is welcome
+- Always available for a walk-and-talk or coffee/tea to chat about anything
+
+---
+
+</div>
+</div>
 
 <div class="expanded-content" id="expandedContent">
 <div markdown="1">
@@ -92,16 +125,16 @@ Some more facts about thinks I like (in no particular order):
 </div>
 
 <script>
-function toggleExpanded() {
-  const content = document.getElementById('expandedContent');
-  const button = document.querySelector('.expand-toggle');
+function toggleExpanded(contentId, buttonEl, openText, closeText) {
+  const content = document.getElementById(contentId);
+  const button = buttonEl;
   
   if (content.classList.contains('show')) {
     content.classList.remove('show');
-    button.innerHTML = 'Read more about my journey →';
+    button.innerHTML = openText;
   } else {
     content.classList.add('show');
-    button.innerHTML = 'Less details ↑';
+    button.innerHTML = closeText;
   }
 }
 </script>
@@ -110,5 +143,3 @@ function toggleExpanded() {
 -->
 
 <!--  I specialize in <a href="https://github.com/DUNE-DAQ/">Data Acquisition Systems</a> at <a href="https://home.cern/">CERN</a>, mainly focusing on software development and optimization of data intensive applications.</p> -->
-
-
