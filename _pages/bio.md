@@ -55,15 +55,17 @@ I'm passionate about business and entrepeneurship. I served as a startup competi
 <li> My interests outside of science and computers include bio-hacking, mixing cusines from different countries, and reading about history</li> -->
 
 <button
+  id="journeyToggle"
   class="expand-toggle"
-  onclick="toggleExpanded('expandedContent', this, 'Read more about my journey →', 'Less details ↑')"
+  onclick="toggleJourney()"
 >
   Read more about my journey →
 </button>
 
 <button
+  id="manualToggle"
   class="expand-toggle"
-  onclick="toggleExpanded('personalManualContent', this, 'Personal User Manual →', 'Hide Personal User Manual ↑')"
+  onclick="toggleManual()"
 >
   Personal User Manual →
 </button>
@@ -125,16 +127,29 @@ Some more facts about thinks I like (in no particular order):
 </div>
 
 <script>
-function toggleExpanded(contentId, buttonEl, openText, closeText) {
-  const content = document.getElementById(contentId);
-  const button = buttonEl;
-  
+function toggleJourney() {
+  const content = document.getElementById('expandedContent');
+  const button = document.getElementById('journeyToggle');
+
   if (content.classList.contains('show')) {
     content.classList.remove('show');
-    button.innerHTML = openText;
+    button.innerHTML = 'Read more about my journey →';
   } else {
     content.classList.add('show');
-    button.innerHTML = closeText;
+    button.innerHTML = 'Less details ↑';
+  }
+}
+
+function toggleManual() {
+  const content = document.getElementById('personalManualContent');
+  const button = document.getElementById('manualToggle');
+
+  if (content.classList.contains('show')) {
+    content.classList.remove('show');
+    button.innerHTML = 'Personal User Manual →';
+  } else {
+    content.classList.add('show');
+    button.innerHTML = 'Hide Personal User Manual ↑';
   }
 }
 </script>
