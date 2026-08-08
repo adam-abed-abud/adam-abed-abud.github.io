@@ -73,6 +73,7 @@ permalink: /links/
   - [Car simulator](https://slowroads.io/)
   - [Drive and Travel](https://drivenlisten.com/)
   - [VIM Adventures](https://vim-adventures.com/)
+  - [Geo and Time guessing](https://timeguessr.com/play)
 
 - **🛠️ Utilities & Fixes**
   - [Car Repair Tutorials & Tips](https://www.carcarekiosk.com)
