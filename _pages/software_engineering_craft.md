@@ -43,3 +43,10 @@ Being a senior engineer or tech leader is not about writing more code or solving
 Great tools for improving software engineering craft help engineers explore how code actually behaves, understand what happens under the hood, and play through hands-on experimentation.
 
   - [Compiler Explorer](https://godbolt.org/)
+
+## **Insights**
+
+The following is an interesting collection of insights about software engineering, AI, development, team building and much more. 
+
+  - [AI is removing the middle class of SW engineering](https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html)
+
