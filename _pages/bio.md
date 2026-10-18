@@ -48,6 +48,8 @@ nav_order: 1
 
 You can mostly find me working on linux, storage technologies, C++ development [(I wrote a guide!)](/assets/pdf/modern_cpp_guide_Adam_Abed_Abud.pdf), building data platforms or benchmarking high-performance applications.
 
+For the hardware, Linux desktops, and tools I use, see my [development setup]({{ '/devsetup/' | relative_url }}).
+
 I like to build, test, and play with the latest technologies. These can range from C++/python libraries, developing home automation applications with Arduino/ESP32 microcontrollers, test linux distros or analyzing large data sets (weather, climate, environment, finance etc.) using (not only) machine learning techniques
 
 <span class="fa fa-tasks about-icon"></span> I have worked on:
@@ -115,11 +117,11 @@ When I'm not coding or optimizing systems, I'm passionate about:
 Some more facts about thinks I like (in no particular order): 
 - Enjoy picnics 
 - Particularly enjoy teaching
-- Like One Piece and it’s misteries 
+- Like One Piece and its mysteries 
 - Enjoy reading 
 - Iron man and Batman are my favorite superheroes 
 - Rarely watch tv shows
-- Like technology 
+- Like technology and homelabbing
 - Enjoy hummus
 - Like robots
 - Started making kombucha and fermenting food at home
