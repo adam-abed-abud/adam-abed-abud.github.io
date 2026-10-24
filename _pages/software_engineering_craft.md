@@ -49,4 +49,5 @@ Great tools for improving software engineering craft help engineers explore how 
 The following is an interesting collection of insights about software engineering, AI, development, team building and much more. 
 
   - [AI is removing the middle class of SW engineering](https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html)
+  - [Practical Guide: Working with AI Tools as a Developer](https://responsibleai.guide/ai-assisted-coding-guide/) Practical guidance on using AI for coding
 
