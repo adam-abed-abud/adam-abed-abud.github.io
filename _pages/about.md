@@ -22,7 +22,7 @@ social: false# includes social icons at the bottom of the page
 
 <p>R&D Software Engineer / Applied Physicist passionate about turning cutting-edge research into real-world solutions.</p> 
 
-<p>I like to build tech stuff and teach about it. C++/Linux/Health enthusiast.</p>
+<p>I like to build tech stuff, teach about it, and play chess. C++/Linux/Health enthusiast.</p>
 
 <p><span class="fa fa-code about-icon"></span> I work in HPC, algorithms, computer vision, robotics and data processing for mission-critical applications, using ML/AI in the Automotive, Earth observation, and Life Science industries.</p>
 

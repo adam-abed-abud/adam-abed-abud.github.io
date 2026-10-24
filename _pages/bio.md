@@ -112,6 +112,7 @@ When I'm not coding or optimizing systems, I'm passionate about:
 - **Bio-hacking**: I read about human performance through technology, nutrition, and lifestyle changes
 - **Kitchen Fusion**: Experimenting with cuisines from different cultures
 - **History**: Reading about history, culture and traditions of different countries
+- **Chess**: I enjoy playing chess
 - **Hardware Tinkering**: Building home automation systems with Arduino and ESP32, weather stations, RC cars, and more! 
 
 Some more facts about thinks I like (in no particular order): 
