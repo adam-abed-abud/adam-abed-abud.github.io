@@ -14,6 +14,9 @@ children:
   - title: Software Engineering
     permalink: /software-engineering
   - title: divider
+  - title: Development Setup
+    permalink: /devsetup/
+  - title: divider
   - title: Storage Resources
     permalink: /storage/
   - title: divider
