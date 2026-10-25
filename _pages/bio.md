@@ -48,6 +48,8 @@ nav_order: 1
 
 You can mostly find me working on linux, storage technologies, C++ development [(I wrote a guide!)](/assets/pdf/modern_cpp_guide_Adam_Abed_Abud.pdf), building data platforms or benchmarking high-performance applications.
 
+I care about engineering culture: sharing knowledge, learning from each other, and improving how we build software together. I set up the Software Group, later renamed the [Software Guild](https://peerdom.com/blog/spotify-model-squads-tribes-chapters-guide), as a community for engineers to exchange ideas and practices.
+
 For the hardware, Linux desktops, and tools I use, see my [development setup]({{ '/devsetup/' | relative_url }}).
 
 I like to build, test, and play with the latest technologies. These can range from C++/python libraries, developing home automation applications with Arduino/ESP32 microcontrollers, test linux distros or analyzing large data sets (weather, climate, environment, finance etc.) using (not only) machine learning techniques
